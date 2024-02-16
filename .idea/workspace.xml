@@ -4,18 +4,60 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79803137-7b0e-48ff-9101-7579cc4e1893" name="Changes" comment="" />
+    <list default="true" id="79803137-7b0e-48ff-9101-7579cc4e1893" name="Changes" comment="Se creo la Snippets para crear una lista de listas en la cual representa una &quot;matriz&quot; con un comando por linea y un caracter por &quot;columna&quot;">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Snippets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Snippets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uvg/edu/gt/SnippetsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uvg/edu/gt/SnippetsTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "JusSolo"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="8e767e75-4763-4b61-b109-fc28afd115d8" />
+        <option name="url" value="https://github.com/JusSolo/Interprete_LISP.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2cHhvc5SePhjv2XO0LHeTW1Hcyk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -24,19 +66,77 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.SnippetsTest.romperCodigo.executor": "Run",
+    "JUnit.TokenizerTest.tokenisation.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "b68b0c21",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/juan/Documentos/education/U/Semestres/Semestre_9/Algoritmos y Estructura",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="uvg.edu.gt" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.SnippetsTest.romperCodigo">
+    <configuration name="SnippetsTest.romperCodigo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Interprete_LISP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uvg.edu.gt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uvg.edu.gt" />
+      <option name="MAIN_CLASS_NAME" value="uvg.edu.gt.SnippetsTest" />
+      <option name="METHOD_NAME" value="romperCodigo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TokenizerTest.tokenisation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Interprete_LISP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uvg.edu.gt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uvg.edu.gt" />
+      <option name="MAIN_CLASS_NAME" value="uvg.edu.gt.TokenizerTest" />
+      <option name="METHOD_NAME" value="tokenisation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SnippetsTest.romperCodigo" />
+        <item itemvalue="JUnit.TokenizerTest.tokenisation" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
         <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-e47b9c39" />
+        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-76dd8dae" />
       </set>
     </attachedChunks>
   </component>
@@ -49,10 +149,51 @@
       <option name="presentableId" value="Default" />
       <updated>1707774645579</updated>
       <workItem from="1707774646916" duration="12000" />
+      <workItem from="1708007022352" duration="6000" />
+      <workItem from="1708008091366" duration="7486000" />
+      <workItem from="1708097901274" duration="3264000" />
+      <workItem from="1708361216399" duration="2248000" />
+      <workItem from="1708389542555" duration="5750000" />
+      <workItem from="1708446789444" duration="62000" />
+      <workItem from="1708610681468" duration="4796000" />
     </task>
+    <task id="LOCAL-00001" summary="Se creo la classe Leo para leer los archivos de texto con código">
+      <option name="closed" value="true" />
+      <created>1707776791474</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707776791474</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Se creo la Snippets para crear una lista de listas en la cual representa una &quot;matriz&quot; con un comando por linea y un caracter por &quot;columna&quot;">
+      <option name="closed" value="true" />
+      <created>1708392655563</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708392655563</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Se creo la classe Leo para leer los archivos de texto con código" />
+    <MESSAGE value="Se creo un primer esquema de la Clase Tokenizer" />
+    <MESSAGE value="Se creo la Snippets para crear una lista de listas en la cual representa una &quot;matriz&quot; con un comando por linea y un caracter por &quot;columna&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se creo la Snippets para crear una lista de listas en la cual representa una &quot;matriz&quot; con un comando por linea y un caracter por &quot;columna&quot;" />
   </component>
 </project>
