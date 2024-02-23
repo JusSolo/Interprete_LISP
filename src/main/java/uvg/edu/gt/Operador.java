@@ -3,5 +3,5 @@ package uvg.edu.gt;
 import java.util.Stack;
 
 public interface Operador {
-    public void operar(Stack<Object> valores);
+    public void operar(Stack<String> valores);
 }
