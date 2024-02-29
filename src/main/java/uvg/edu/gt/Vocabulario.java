@@ -10,6 +10,9 @@ public class Vocabulario {
         memoria = new HashMap<>();
         Operador o1 = new Suma();
         memoria.put("+", o1);
+        Operador o2 = new Atom();
+        memoria.put("atom",o2);
+
     }
 
     public static Vocabulario obtenerInstancia() {
@@ -32,6 +35,9 @@ public class Vocabulario {
     public boolean isOperador(String simbolo) {
         return memoria.containsKey(simbolo) && memoria.get(simbolo) instanceof Operador;
     }
+    public boolean isAtom(String simbolo){
+        return   memoria.containsKey(simbolo) || isInt(simbolo) ; // tentativo || isString(simbolo)
+    }
 
     private boolean isInt(String str) {
         try {
@@ -40,6 +46,9 @@ public class Vocabulario {
         } catch (NumberFormatException e) {
             return false;
         }
+    }
+    public void addMemori(String name, Object value){
+        memoria.put(name,value);
     }
 }
 

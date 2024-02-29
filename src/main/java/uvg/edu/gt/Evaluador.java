@@ -19,7 +19,10 @@ public class Evaluador {
         vocabulario = Vocabulario.obtenerInstancia();
     }
 
-    public  String  evaluar(List<String> comando){
+    public  String  evaluar(List<String> comando){ //la creacion de funciones es un caso aparte, no es una operacion almenos para este interprete
+        if (comando.get(1).equals("defun")){
+            return Defun.DefFun(comando);
+        }
         for (String v: comando){
             switch (v){
                 case "(":
