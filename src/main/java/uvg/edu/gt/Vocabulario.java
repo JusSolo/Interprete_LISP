@@ -41,6 +41,9 @@ public class Vocabulario {
             return false;
         }
     }
+    public void addMemori(String name, Object value){
+        memoria.put(name,value);
+    }
 }
 
 
