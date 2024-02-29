@@ -23,6 +23,7 @@ public class Evaluador {
         if (comando.get(1).equals("defun")){
             return Defun.DefFun(comando);
         }
+        boolean precedQuote = false;
         for (String v: comando){
             switch (v){
                 case "(":
@@ -35,9 +36,17 @@ public class Evaluador {
                     Operador op = (Operador) vocabulario.interpretar(op0);
                     op.operar(valores);
                     break;
+                case "quote":
+                    precedQuote = true;
+                    operaciones.add(v);
+                    break;
                 default:
                     //algo
-                    if (vocabulario.isOperador(v))
+                    if (precedQuote) {
+                        precedQuote = false;
+                        valores.add(v);
+                    }
+                    else if (vocabulario.isOperador(v))
                         operaciones.add(v);
                     else
                         valores.add(v);
