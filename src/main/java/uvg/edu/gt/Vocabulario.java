@@ -10,6 +10,9 @@ public class Vocabulario {
         memoria = new HashMap<>();
         Operador o1 = new Suma();
         memoria.put("+", o1);
+
+        Operador o2 = new Resta();
+        memoria.put("-", o2);
     }
 
     public static Vocabulario obtenerInstancia() {
