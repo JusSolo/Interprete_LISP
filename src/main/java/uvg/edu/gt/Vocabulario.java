@@ -13,6 +13,15 @@ public class Vocabulario {
 
         Operador o2 = new Resta();
         memoria.put("-", o2);
+
+        Operador o3 = new Div();
+        memoria.put("/", o3);
+
+        Operador o4 = new Prod();
+        memoria.put("*", o4);
+
+        Operador o5 = new Equal();
+        memoria.put("EQUAL", o5);
     }
 
     public static Vocabulario obtenerInstancia() {
@@ -43,6 +52,10 @@ public class Vocabulario {
         } catch (NumberFormatException e) {
             return false;
         }
+    }
+
+    public void addMemori(String name, Object value){
+        memoria.put(name,value);
     }
 }
 

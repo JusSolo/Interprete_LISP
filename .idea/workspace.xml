@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79803137-7b0e-48ff-9101-7579cc4e1893" name="Changes" comment="Clase Resta.java" />
+    <list default="true" id="79803137-7b0e-48ff-9101-7579cc4e1893" name="Changes" comment="Clase Resta.java">
+      <change afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Div.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Equal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Prod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Setq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Vocabulario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Vocabulario.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -151,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709412201692</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Clase Resta.java">
+      <option name="closed" value="true" />
+      <created>1709412286660</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1709412286660</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
