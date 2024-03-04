@@ -1,0 +1,202 @@
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"VcsDirectoryMappings\">\r\n    <mapping directory=\"$PROJECT_DIR$\" vcs=\"Git\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+--- a/.idea/vcs.xml	(revision c22f88cfb4144e00c766a2d5b86e9cf15e0d149e)
++++ b/.idea/vcs.xml	(date 1709407606430)
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="VcsDirectoryMappings">
+-    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++    <mapping directory="" vcs="Git" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"79803137-7b0e-48ff-9101-7579cc4e1893\" name=\"Changes\" comment=\"Se creo la classe Leo para leer los archivos de texto con código\">\r\n      <change afterPath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/Tokenizer.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/Snippets.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/Snippets.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/uvg/edu/gt/SnippetsTest.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/uvg/edu/gt/SnippetsTest.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"JUnit5 Test Class\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PUSH_AUTO_UPDATE\" value=\"true\" />\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 3\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2cHhvc5SePhjv2XO0LHeTW1Hcyk\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;JUnit.SnippetsTest.romperCodigo.executor&quot;: &quot;Run&quot;,\r\n    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,\r\n    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\r\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;/home/juan/Documentos/education/U/Semestres/Semestre_9/Algoritmos y Estructura&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CreateTestDialog.Recents.Supers\">\r\n      <recent name=\"\" />\r\n    </key>\r\n    <key name=\"CreateTestDialog.RecentsKey\">\r\n      <recent name=\"uvg.edu.gt\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"SnippetsTest.romperCodigo\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Interprete_LISP\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"uvg.edu.gt.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"uvg.edu.gt\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"uvg.edu.gt.SnippetsTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"romperCodigo\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"JUnit.SnippetsTest.romperCodigo\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"jdk-21.0.1-openjdk-21.0.1-4caba194b151-e47b9c39\" />\r\n        <option value=\"jdk-21.0.1-openjdk-21.0.1-f644763e9732-76dd8dae\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"79803137-7b0e-48ff-9101-7579cc4e1893\" name=\"Changes\" comment=\"\" />\r\n      <created>1707774645579</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1707774645579</updated>\r\n      <workItem from=\"1707774646916\" duration=\"12000\" />\r\n      <workItem from=\"1708007022352\" duration=\"6000\" />\r\n      <workItem from=\"1708008091366\" duration=\"7486000\" />\r\n      <workItem from=\"1708097901274\" duration=\"3264000\" />\r\n      <workItem from=\"1708361216399\" duration=\"2248000\" />\r\n      <workItem from=\"1708389542555\" duration=\"3064000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Se creo la classe Leo para leer los archivos de texto con código\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1707776791474</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1707776791474</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"2\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Se creo la classe Leo para leer los archivos de texto con código\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Se creo la classe Leo para leer los archivos de texto con código\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision c22f88cfb4144e00c766a2d5b86e9cf15e0d149e)
++++ b/.idea/workspace.xml	(date 1709408034338)
+@@ -4,141 +4,68 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="79803137-7b0e-48ff-9101-7579cc4e1893" name="Changes" comment="Se creo la classe Leo para leer los archivos de texto con código">
+-      <change afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Tokenizer.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Snippets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Snippets.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/uvg/edu/gt/SnippetsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uvg/edu/gt/SnippetsTest.java" afterDir="false" />
++    <list default="true" id="b212e169-90c3-4ea7-9e0a-06e9f006c6bb" name="Changes" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+-  </component>
+-  <component name="FileTemplateManagerImpl">
+-    <option name="RECENT_TEMPLATES">
+-      <list>
+-        <option value="JUnit5 Test Class" />
+-        <option value="Class" />
+-      </list>
+-    </option>
+   </component>
+   <component name="Git.Settings">
+-    <option name="PUSH_AUTO_UPDATE" value="true" />
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="main" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+   </component>
+-  <component name="ProjectColorInfo">{
+-  &quot;associatedIndex&quot;: 3
+-}</component>
+-  <component name="ProjectId" id="2cHhvc5SePhjv2XO0LHeTW1Hcyk" />
++  <component name="ProjectColorInfo"><![CDATA[{
++  "associatedIndex": 6
++}]]></component>
++  <component name="ProjectId" id="2d95eSyeha3NEwS2NmlELjJlZBe" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;JUnit.SnippetsTest.romperCodigo.executor&quot;: &quot;Run&quot;,
+-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;/home/juan/Documentos/education/U/Semestres/Semestre_9/Algoritmos y Estructura&quot;,
+-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+-  }
+-}</component>
+-  <component name="RecentsManager">
+-    <key name="CreateTestDialog.Recents.Supers">
+-      <recent name="" />
+-    </key>
+-    <key name="CreateTestDialog.RecentsKey">
+-      <recent name="uvg.edu.gt" />
+-    </key>
+-  </component>
+-  <component name="RunManager">
+-    <configuration name="SnippetsTest.romperCodigo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+-      <module name="Interprete_LISP" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="uvg.edu.gt.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
+-      <option name="PACKAGE_NAME" value="uvg.edu.gt" />
+-      <option name="MAIN_CLASS_NAME" value="uvg.edu.gt.SnippetsTest" />
+-      <option name="METHOD_NAME" value="romperCodigo" />
+-      <option name="TEST_OBJECT" value="method" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <recent_temporary>
+-      <list>
+-        <item itemvalue="JUnit.SnippetsTest.romperCodigo" />
+-      </list>
+-    </recent_temporary>
+-  </component>
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "git-widget-placeholder": "master",
++    "kotlin-language-version-configured": "true",
++    "node.js.detected.package.eslint": "true",
++    "node.js.detected.package.tslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "node.js.selected.package.tslint": "(autodetect)",
++    "nodejs_package_manager_path": "npm",
++    "vue.rearranger.settings.migration": "true"
++  }
++}]]></component>
+   <component name="SharedIndexes">
+     <attachedChunks>
+       <set>
+-        <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-e47b9c39" />
+-        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-76dd8dae" />
++        <option value="jdk-21.0.2-openjdk-21.0.2-f644763e9732-c0c073db" />
+       </set>
+     </attachedChunks>
+   </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+-      <changelist id="79803137-7b0e-48ff-9101-7579cc4e1893" name="Changes" comment="" />
+-      <created>1707774645579</created>
++      <changelist id="b212e169-90c3-4ea7-9e0a-06e9f006c6bb" name="Changes" comment="" />
++      <created>1709407549015</created>
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+-      <updated>1707774645579</updated>
+-      <workItem from="1707774646916" duration="12000" />
+-      <workItem from="1708007022352" duration="6000" />
+-      <workItem from="1708008091366" duration="7486000" />
+-      <workItem from="1708097901274" duration="3264000" />
+-      <workItem from="1708361216399" duration="2248000" />
+-      <workItem from="1708389542555" duration="3064000" />
+-    </task>
+-    <task id="LOCAL-00001" summary="Se creo la classe Leo para leer los archivos de texto con código">
+-      <option name="closed" value="true" />
+-      <created>1707776791474</created>
+-      <option name="number" value="00001" />
+-      <option name="presentableId" value="LOCAL-00001" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1707776791474</updated>
++      <updated>1709407549015</updated>
++      <workItem from="1709407550278" duration="482000" />
+     </task>
+-    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
+   </component>
+-  <component name="Vcs.Log.Tabs.Properties">
+-    <option name="TAB_STATES">
+-      <map>
+-        <entry key="MAIN">
+-          <value>
+-            <State />
+-          </value>
+-        </entry>
+-      </map>
+-    </option>
+-  </component>
+-  <component name="VcsManagerConfiguration">
+-    <MESSAGE value="Se creo la classe Leo para leer los archivos de texto con código" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Se creo la classe Leo para leer los archivos de texto con código" />
+-  </component>
+ </project>
+\ No newline at end of file
