@@ -11,7 +11,7 @@ import java.util.Stack;
  *
  */
 public class Snippets {
-    private static List<String> fullLPL( List<String> programa){
+    public static List<String> fullLPL( List<String> programa){
         Stack<String> parentesis = new Stack<>();
         List<String> prog2 = new ArrayList<String>();
         String l = "";
