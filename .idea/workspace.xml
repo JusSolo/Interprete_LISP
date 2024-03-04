@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="79803137-7b0e-48ff-9101-7579cc4e1893" name="Changes" comment="Se agrego atom">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Evaluador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Evaluador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Funcion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Funcion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,30 +63,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.App.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EvaluadorTest.evaluar.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EvaluadorTest.evaluarDefun.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EvaluadorTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SnippetsTest.romperCodigo.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TokenizerTest.tokenisation.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;e65aa290&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/juan/Documentos/education/U/Semestres/Semestre_9/Algoritmos y Estructura&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.App.executor": "Run",
+    "JUnit.EvaluadorTest.evaluar.executor": "Run",
+    "JUnit.EvaluadorTest.evaluarDefun.executor": "Run",
+    "JUnit.EvaluadorTest.executor": "Run",
+    "JUnit.SnippetsTest.romperCodigo.executor": "Run",
+    "JUnit.TokenizerTest.tokenisation.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "JuanLuis",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/juan/Documentos/education/U/Semestres/Semestre_9/Algoritmos y Estructura",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
