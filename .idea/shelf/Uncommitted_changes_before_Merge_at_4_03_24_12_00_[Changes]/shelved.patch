@@ -1,0 +1,82 @@
+Index: src/main/java/uvg/edu/gt/Snippets.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package uvg.edu.gt;\n\n<<<<<<< HEAD\n=======\nimport org.jetbrains.annotations.NotNull;\n\n>>>>>>> origin/master\nimport java.util.ArrayList;\nimport java.util.Arrays;\nimport java.util.List;\nimport java.util.Stack;\n\n/**\n *\n */\npublic class Snippets {\n    private static List<String> fullLPL( List<String> programa){\n        Stack<String> parentesis = new Stack<>();\n        List<String> prog2 = new ArrayList<String>();\n<<<<<<< HEAD\n        StringBuilder l = new StringBuilder();\n        for (String linea : programa) {\n            linea.toLowerCase(); // nuestro interprete solo conoce minusculas\n            for (int j = 0; j < linea.length(); j++) {\n                char car = linea.charAt(j);\n                switch (car) {\n                    case '(':\n                        parentesis.add(\"-\");\n                        l.append(\" ( \");\n                        break;\n                    case ')':\n                        parentesis.pop();\n                        l.append(\" ) \");\n                        break;\n                    default:\n                        l.append(car);\n                }\n\n\n            }\n            if (parentesis.isEmpty()) {\n                prog2.add(l.toString());\n                l = new StringBuilder();\n=======\n        String l = \"\";\n        for (int i = 0; i < programa.size(); i++){\n            String linea = programa.get(i);\n            for (int j=0; j < linea.length(); j++ ){\n                char car = linea.charAt(j);\n                switch (car){\n                    case '(':\n                        parentesis.add(\"-\");\n                        l = l + \"( \";\n                        break;\n                    case ')':\n                        parentesis.pop();\n                        l = l + \" )\";\n                        break;\n                    default:\n                        l = l + car;\n                }\n\n\n                }\n            if (parentesis.isEmpty()){\n                prog2.add(l);\n                l = \"\";\n>>>>>>> origin/master\n            }\n        }\n        return prog2;\n\n    }\n\n    public static List<List<String>> romperCodigo(List<String> programa){\n        programa = fullLPL(programa);\n        List<List<String>> pedasos = new ArrayList<>();\n<<<<<<< HEAD\n        for (String s : programa) {\n            String[] linea = s.split(\" \");\n            pedasos.add(Arrays.asList(linea));\n        }\n=======\n        for (int i = 0; i < programa.size(); i++){\n            String[] linea = programa.get(i).split(\" \");\n            pedasos.add(Arrays.asList(linea));\n            }\n>>>>>>> origin/master\n        return pedasos;\n        }\n}\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/uvg/edu/gt/Snippets.java b/src/main/java/uvg/edu/gt/Snippets.java
+--- a/src/main/java/uvg/edu/gt/Snippets.java	(revision c22f88cfb4144e00c766a2d5b86e9cf15e0d149e)
++++ b/src/main/java/uvg/edu/gt/Snippets.java	(date 1709575221829)
+@@ -1,10 +1,6 @@
+ package uvg.edu.gt;
+ 
+-<<<<<<< HEAD
+-=======
+-import org.jetbrains.annotations.NotNull;
+ 
+->>>>>>> origin/master
+ import java.util.ArrayList;
+ import java.util.Arrays;
+ import java.util.List;
+@@ -17,7 +13,7 @@
+     private static List<String> fullLPL( List<String> programa){
+         Stack<String> parentesis = new Stack<>();
+         List<String> prog2 = new ArrayList<String>();
+-<<<<<<< HEAD
++
+         StringBuilder l = new StringBuilder();
+         for (String linea : programa) {
+             linea.toLowerCase(); // nuestro interprete solo conoce minusculas
+@@ -41,31 +37,7 @@
+             if (parentesis.isEmpty()) {
+                 prog2.add(l.toString());
+                 l = new StringBuilder();
+-=======
+-        String l = "";
+-        for (int i = 0; i < programa.size(); i++){
+-            String linea = programa.get(i);
+-            for (int j=0; j < linea.length(); j++ ){
+-                char car = linea.charAt(j);
+-                switch (car){
+-                    case '(':
+-                        parentesis.add("-");
+-                        l = l + "( ";
+-                        break;
+-                    case ')':
+-                        parentesis.pop();
+-                        l = l + " )";
+-                        break;
+-                    default:
+-                        l = l + car;
+-                }
+ 
+-
+-                }
+-            if (parentesis.isEmpty()){
+-                prog2.add(l);
+-                l = "";
+->>>>>>> origin/master
+             }
+         }
+         return prog2;
+@@ -75,17 +47,12 @@
+     public static List<List<String>> romperCodigo(List<String> programa){
+         programa = fullLPL(programa);
+         List<List<String>> pedasos = new ArrayList<>();
+-<<<<<<< HEAD
+-        for (String s : programa) {
+-            String[] linea = s.split(" ");
+-            pedasos.add(Arrays.asList(linea));
+-        }
+-=======
++
+         for (int i = 0; i < programa.size(); i++){
+             String[] linea = programa.get(i).split(" ");
+             pedasos.add(Arrays.asList(linea));
+             }
+->>>>>>> origin/master
++
+         return pedasos;
+         }
+ }

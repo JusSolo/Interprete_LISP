@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79803137-7b0e-48ff-9101-7579cc4e1893" name="Changes" comment="Se creo la classe Leo para leer los archivos de texto con código">
-      <change afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Tokenizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Snippets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Snippets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uvg/edu/gt/SnippetsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uvg/edu/gt/SnippetsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +22,26 @@
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="JuanLuis" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "JusSolo"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="8e767e75-4763-4b61-b109-fc28afd115d8" />
+        <option name="url" value="https://github.com/JusSolo/Interprete_LISP.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -66,7 +82,23 @@
       <recent name="uvg.edu.gt" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.SnippetsTest.romperCodigo">
+    <configuration name="EvaluadorTest.evaluar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Interprete_LISP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uvg.edu.gt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uvg.edu.gt" />
+      <option name="MAIN_CLASS_NAME" value="uvg.edu.gt.EvaluadorTest" />
+      <option name="METHOD_NAME" value="evaluar" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SnippetsTest.romperCodigo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Interprete_LISP" />
       <extension name="coverage">
@@ -85,6 +117,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SnippetsTest.romperCodigo" />
+        <item itemvalue="JUnit.EvaluadorTest.evaluar" />
         <item itemvalue="JUnit.SnippetsTest.romperCodigo" />
       </list>
     </recent_temporary>

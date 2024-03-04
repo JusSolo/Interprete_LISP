@@ -13,8 +13,8 @@ class SnippetsTest {
         List<String> codigo =  Arrays.asList("(","+ ","1 2",")","(* 1 23 45)","(+ (* ( + 1 2) 5", ")6)");
         List<String> s1 = Arrays.asList("(","+","1" , "2",")");
         List<String> s2 = Arrays.asList("(","*", "1", "23", "45",")");
-        List<String> s3 = Arrays.asList("(","+", "(","*", "(" ,"", "+", "1","2",")" ,"5", ")","6",")");
-        List<List<String>> esperado = new ArrayLiLeost<>();
+        List<String> s3 = Arrays.asList("(","+", "(","*", "(", "+", "1","2",")" ,"5", ")","6",")");
+        List<List<String>> esperado = new ArrayList<>();
         esperado.add(s1);
         esperado.add(s2);
         esperado.add(s3);
