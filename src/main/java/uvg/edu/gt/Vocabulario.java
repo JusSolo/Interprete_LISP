@@ -21,7 +21,11 @@ public class Vocabulario {
         memoria.put("*", o4);
 
         Operador o5 = new Equal();
-        memoria.put("EQUAL", o5);
+        memoria.put("=", o5);
+        memoria.put("equal", o5);
+
+        Operador o6 = new Setq();
+        memoria.put("setq", o6);
     }
 
     public static Vocabulario obtenerInstancia() {
@@ -35,7 +39,7 @@ public class Vocabulario {
         if (memoria.containsKey(simbolo)) { // el símbolo es una variable
             return memoria.get(simbolo);
         }
-        if (isInt(simbolo)) { // el símbolo es un entero
+        else if (isInt(simbolo)) { // el símbolo es un entero
             return Integer.parseInt(simbolo);
         }
         return simbolo; // Si no es ni entero ni símbolo, debería ser una cadena
@@ -56,6 +60,14 @@ public class Vocabulario {
 
     public void addMemori(String name, Object value){
         memoria.put(name,value);
+    }
+
+    public boolean isAtom(String simbolo){
+        return   memoria.containsKey(simbolo) || isInt(simbolo) ; // tentativo || isString(simbolo)
+    }
+
+    public HashMap<String, Object> getMemoria() {
+        return memoria;
     }
 }
 

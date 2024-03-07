@@ -11,6 +11,7 @@ public class Setq implements Operador{
         //Instancia de vocabulario
         Vocabulario vocabulario = Vocabulario.obtenerInstancia();
         //Variable se agrega a memoria
-        vocabulario.addMemori(val,ref);
+        vocabulario.addMemori(ref,val);
+        //valores.add(val);
     }
 }
