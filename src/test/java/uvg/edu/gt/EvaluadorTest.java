@@ -57,12 +57,68 @@ class EvaluadorTest {
 
         List<String> L1 =  Arrays.asList("(setq x 6)","(+ x 8)");
         List<List<String>> cod = Snippets.romperCodigo(L1);
+        System.out.println(cod);
         Evaluador evaluador = new Evaluador();
         Vocabulario voc = Vocabulario.obtenerInstancia();
         String set = evaluador.evaluar(cod.get(0));
         String eq = evaluador.evaluar(cod.get(1));
 
         assertEquals("14",eq);
+
+    }
+
+    @Test
+    void evaluarCond() {// probando setq
+
+        List<String> L1 =  Arrays.asList("( cond ( ( = 1 0) ( + 1 2 ) ( - 35 5 ) )) ");
+        List<List<String>> cod = Snippets.romperCodigo(L1);
+
+        Evaluador evaluador = new Evaluador();
+        Vocabulario voc = Vocabulario.obtenerInstancia();
+        List<String> L2 = cod.get(0);
+
+        String set = evaluador.evaluar(L2);
+
+
+        assertEquals("30",set);
+
+    }
+
+    @Test
+    void evaluarRec() {// probando setq
+
+        List<String> L1 =  Arrays.asList(" (defun cota5(n) ( cond ( (= n  5) ( + n 0 ) ( - 35 5 ) ))) ","(cota5 5)");
+        List<List<String>> cod = Snippets.romperCodigo(L1);
+
+        Evaluador evaluador = new Evaluador();
+        Vocabulario voc = Vocabulario.obtenerInstancia();
+        List<String> L2 = cod.get(0);
+        evaluador.evaluar(L2);
+        L2 = cod.get(1);
+        String set = evaluador.evaluar(L2);
+
+
+        assertEquals("5",set);
+
+    }
+    //
+
+    @Test
+    void evaluarFact() {// probando factorial
+
+        List<String> L1 =  Arrays.asList(" ( defun fact(n) (cond ((= n 1) (+ 1 0))   ( * n ( fact  (- n 1 ))))) ","(fact 5)");
+        List<List<String>> cod = Snippets.romperCodigo(L1);
+
+        Evaluador evaluador = new Evaluador();
+
+        Vocabulario voc = Vocabulario.obtenerInstancia();
+        List<String> L2 = cod.get(0);
+        evaluador.evaluar(L2);
+        L2 = cod.get(1);
+        String set = evaluador.evaluar(L2);
+
+
+        assertEquals("120",set);
 
     }
 }

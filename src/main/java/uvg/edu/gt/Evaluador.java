@@ -25,21 +25,29 @@ public class Evaluador {
             return Defun.DefFun(comando);
         }
         boolean precedQuote = false;
-        for (String v: comando){
+        for (int i = 0; i < comando.size(); i++) {
+            String v = comando.get(i);
             switch (v){
                 case "(":
                     //algo
                     parentesis.add("-");
                     break;
                 case ")":
+
                     parentesis.pop();
-                    String op0 = operaciones.pop();
-                    Operador op = (Operador) vocabulario.interpretar(op0);
-                    op.operar(valores);
+                    if (!operaciones.isEmpty()) {
+                        String op0 = operaciones.pop();
+                        Operador op = (Operador) vocabulario.interpretar(op0);
+                        op.operar(valores);
+                    }
                     break;
                 case "quote":
                     precedQuote = true;
                     operaciones.add(v);
+                    break;
+                case "cond":
+                    Cond.mod(comando,i);
+                    i--;
                     break;
                 default:
                     //algo

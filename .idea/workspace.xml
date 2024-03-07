@@ -5,19 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79803137-7b0e-48ff-9101-7579cc4e1893" name="Changes" comment="Merge branch 'Carlos'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/uvg/edu/gt/Defun.java&#10;#&#9;src/main/java/uvg/edu/gt/Evaluador.java&#10;#&#9;src/main/java/uvg/edu/gt/Funcion.java&#10;#&#9;src/main/java/uvg/edu/gt/Vocabulario.java">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_2_2024_1_34_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_2_2024_1_34_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_2_2024_4_17_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_2_2024_4_17_PM__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_03_24_11_55__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_03_24_11_55__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_03_24_11_59__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_03_24_11_59__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_4_03_24_12_00__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_4_03_24_12_00__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Cond.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_2_2024_1_34_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_2_2024_1_34_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_2_2024_4_17_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_2_2024_4_17_PM__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_03_24_11_55_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_03_24_11_55__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_03_24_11_59_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_03_24_11_59__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_4_03_24_12_00_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_4_03_24_12_00__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Div.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Div.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Equal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Equal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Defun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Defun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Evaluador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Evaluador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Funcion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Funcion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Prod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Prod.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Resta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Resta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Setq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Setq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Suma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Suma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Vocabulario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Vocabulario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/uvg/edu/gt/EvaluadorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uvg/edu/gt/EvaluadorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,8 +84,11 @@
   "keyToString": {
     "Application.App.executor": "Run",
     "JUnit.EvaluadorTest.evaluar.executor": "Run",
+    "JUnit.EvaluadorTest.evaluarCond.executor": "Run",
     "JUnit.EvaluadorTest.evaluarDefun.executor": "Run",
     "JUnit.EvaluadorTest.evaluarEquals.executor": "Run",
+    "JUnit.EvaluadorTest.evaluarFact.executor": "Run",
+    "JUnit.EvaluadorTest.evaluarRec.executor": "Run",
     "JUnit.EvaluadorTest.evaluarResta.executor": "Run",
     "JUnit.EvaluadorTest.evaluarSetq.executor": "Run",
     "JUnit.EvaluadorTest.executor": "Run",
@@ -111,9 +118,8 @@
       <recent name="uvg.edu.gt" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EvaluadorTest.evaluarSetq">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="uvg.edu.gt.App" />
+  <component name="RunManager" selected="JUnit.EvaluadorTest.evaluarFact">
+    <configuration name="EvaluadorTest.evaluarCond" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Interprete_LISP" />
       <extension name="coverage">
         <pattern>
@@ -121,6 +127,10 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="uvg.edu.gt" />
+      <option name="MAIN_CLASS_NAME" value="uvg.edu.gt.EvaluadorTest" />
+      <option name="METHOD_NAME" value="evaluarCond" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -141,7 +151,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EvaluadorTest.evaluarEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EvaluadorTest.evaluarFact" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Interprete_LISP" />
       <extension name="coverage">
         <pattern>
@@ -151,7 +161,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="uvg.edu.gt" />
       <option name="MAIN_CLASS_NAME" value="uvg.edu.gt.EvaluadorTest" />
-      <option name="METHOD_NAME" value="evaluarEquals" />
+      <option name="METHOD_NAME" value="evaluarFact" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EvaluadorTest.evaluarRec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Interprete_LISP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uvg.edu.gt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uvg.edu.gt" />
+      <option name="MAIN_CLASS_NAME" value="uvg.edu.gt.EvaluadorTest" />
+      <option name="METHOD_NAME" value="evaluarRec" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -173,29 +199,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EvaluadorTest.evaluarSetq" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Interprete_LISP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uvg.edu.gt.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="uvg.edu.gt" />
-      <option name="MAIN_CLASS_NAME" value="uvg.edu.gt.EvaluadorTest" />
-      <option name="METHOD_NAME" value="evaluarSetq" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EvaluadorTest.evaluarSetq" />
+        <item itemvalue="JUnit.EvaluadorTest.evaluarFact" />
+        <item itemvalue="JUnit.EvaluadorTest.evaluarRec" />
+        <item itemvalue="JUnit.EvaluadorTest.evaluarCond" />
         <item itemvalue="JUnit.EvaluadorTest.evaluarResta" />
         <item itemvalue="JUnit.EvaluadorTest.evaluarDefun" />
-        <item itemvalue="JUnit.EvaluadorTest.evaluarEquals" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -228,6 +238,9 @@
       <workItem from="1708962468187" duration="12418000" />
       <workItem from="1709211292215" duration="5125000" />
       <workItem from="1709228146600" duration="1069000" />
+      <workItem from="1710172959987" duration="14108000" />
+      <workItem from="1710249057732" duration="2877000" />
+      <workItem from="1710262801070" duration="6260000" />
     </task>
     <task id="LOCAL-00001" summary="Se creo la classe Leo para leer los archivos de texto con código">
       <option name="closed" value="true" />

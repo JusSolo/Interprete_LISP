@@ -26,7 +26,7 @@ public class Defun {
             inst.add(instruccuines.get(i));
         }
 
-        System.out.println(inst);
+
         Operador f = new Funcion(name,varNames,inst);
         Vocabulario mem = Vocabulario.obtenerInstancia();
         mem.addMemori(name,f);

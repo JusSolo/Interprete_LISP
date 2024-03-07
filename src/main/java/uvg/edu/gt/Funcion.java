@@ -1,5 +1,6 @@
 package uvg.edu.gt;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Stack;
@@ -21,6 +22,7 @@ public class Funcion implements Operador{
 
     @Override
     public void operar(Stack<String> valores) {
+        List<String> instruccionesL = new ArrayList<>(instrucciones) ;
         Stack<String> operaciones = new Stack<String>();
         Stack<String> parentesis = new Stack<String>();
         HashMap<String, String> variables = new HashMap<String,String>();
@@ -31,13 +33,15 @@ public class Funcion implements Operador{
         }
         // se evalua tomando el nombre de las variables
         boolean precedQuote = false;
-        for (String V: instrucciones){
+        for (int j = 0; j < instruccionesL.size(); j++){
+            String V = instruccionesL.get(j);
             String v;
             // revisa si v es una variable local
             if (variables.containsKey(V))
                 v = variables.get(V);
             else
                 v = V;
+
             switch (v){
                 case "(":
                     //algo
@@ -45,13 +49,24 @@ public class Funcion implements Operador{
                     break;
                 case ")":
                     parentesis.pop();
-                    String op0 = operaciones.pop();
-                    Operador op = (Operador) vocabulario.interpretar(op0);
-                    op.operar(valores);
+                    if (!operaciones.isEmpty()) {
+                        String op0 = operaciones.pop();
+                        Operador op = (Operador) vocabulario.interpretar(op0);
+                        // System.out.println(valores);
+                        op.operar(valores);
+                    }
+                    else{
+                     boolean totototototo = true;
+                    }
                     break;
                 case "quote":
                     precedQuote = true;
                     operaciones.add(v);
+                    break;
+                case "cond":
+                    Cond.mod(instruccionesL,j,variables);
+                    //System.out.println(instrucciones);
+                    j--;
                     break;
                 default:
                     //algo
@@ -69,6 +84,7 @@ public class Funcion implements Operador{
                     break;
 
             }
+
         }
 
 

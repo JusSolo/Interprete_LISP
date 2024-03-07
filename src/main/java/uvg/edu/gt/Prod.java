@@ -16,7 +16,7 @@ public class Prod implements Operador{
         Integer a = Integer.parseInt(a1);
         Integer b = Integer.parseInt(b1);
 
-        Integer c = a / b;
+        Integer c = a * b;
         valores.add(Integer.toString(c));
     }
 }
