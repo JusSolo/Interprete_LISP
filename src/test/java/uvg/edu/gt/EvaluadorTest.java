@@ -28,4 +28,41 @@ class EvaluadorTest {
         assertEquals("5",resp);
 
     }
+
+    @Test
+    void evaluarResta() {// probando defun
+
+        List<String> L1 =  Arrays.asList("(- 56 6)");
+        List<List<String>> cod = Snippets.romperCodigo(L1);
+        Evaluador evaluador = new Evaluador();
+        String resp = evaluador.evaluar(cod.get(0));
+
+        assertEquals("50",resp);
+
+    }
+    @Test
+    void evaluarEquals() {// probando defun
+
+        List<String> L1 =  Arrays.asList("(= 56 6)");
+        List<List<String>> cod = Snippets.romperCodigo(L1);
+        Evaluador evaluador = new Evaluador();
+        String resp = evaluador.evaluar(cod.get(0));
+
+        assertEquals("nil",resp);
+
+    }
+
+    @Test
+    void evaluarSetq() {// probando setq
+
+        List<String> L1 =  Arrays.asList("(setq x 6)","(+ x 8)");
+        List<List<String>> cod = Snippets.romperCodigo(L1);
+        Evaluador evaluador = new Evaluador();
+        Vocabulario voc = Vocabulario.obtenerInstancia();
+        String set = evaluador.evaluar(cod.get(0));
+        String eq = evaluador.evaluar(cod.get(1));
+
+        assertEquals("14",eq);
+
+    }
 }

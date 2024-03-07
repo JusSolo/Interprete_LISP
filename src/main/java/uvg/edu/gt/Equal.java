@@ -10,10 +10,10 @@ public class Equal implements Operador{
         String a0 = valores.pop();
         String b0 =  valores.pop();
         if (Objects.equals(a0, b0)){
-            valores.add("T");
+            valores.add("t");
         }
         else {
-            valores.add("NIL");
+            valores.add("nil");
         }
     }
 }
