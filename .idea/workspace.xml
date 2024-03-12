@@ -4,25 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79803137-7b0e-48ff-9101-7579cc4e1893" name="Changes" comment="Merge branch 'Carlos'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/uvg/edu/gt/Defun.java&#10;#&#9;src/main/java/uvg/edu/gt/Evaluador.java&#10;#&#9;src/main/java/uvg/edu/gt/Funcion.java&#10;#&#9;src/main/java/uvg/edu/gt/Vocabulario.java">
-      <change afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Cond.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_2_2024_1_34_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_2_2024_1_34_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_2_2024_4_17_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_3_2_2024_4_17_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_03_24_11_55_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_03_24_11_55__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_03_24_11_59_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_03_24_11_59__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_4_03_24_12_00_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_4_03_24_12_00__Changes_.xml" beforeDir="false" />
+    <list default="true" id="79803137-7b0e-48ff-9101-7579cc4e1893" name="Changes" comment="Merge remote-tracking branch 'origin/master'&#10;Se logro implementar recursividad, la funcion factorial funciona :)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Defun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Defun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Evaluador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Evaluador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Funcion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Funcion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Prod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Prod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Resta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Resta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/uvg/edu/gt/EvaluadorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uvg/edu/gt/EvaluadorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Snippets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Snippets.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +23,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Carlos Villagran &lt;cjvillagranmata@gmial.com&gt;" />
+      </list>
+    </option>
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="PUSH_TAGS">
       <GitPushTagMode>
@@ -80,36 +69,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.App.executor": "Run",
-    "JUnit.EvaluadorTest.evaluar.executor": "Run",
-    "JUnit.EvaluadorTest.evaluarCond.executor": "Run",
-    "JUnit.EvaluadorTest.evaluarDefun.executor": "Run",
-    "JUnit.EvaluadorTest.evaluarEquals.executor": "Run",
-    "JUnit.EvaluadorTest.evaluarFact.executor": "Run",
-    "JUnit.EvaluadorTest.evaluarRec.executor": "Run",
-    "JUnit.EvaluadorTest.evaluarResta.executor": "Run",
-    "JUnit.EvaluadorTest.evaluarSetq.executor": "Run",
-    "JUnit.EvaluadorTest.executor": "Run",
-    "JUnit.SnippetsTest.romperCodigo.executor": "Run",
-    "JUnit.TokenizerTest.tokenisation.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/juan/Documentos/education/U/Semestres/Semestre_9/Algoritmos y Estructura",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.App.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EvaluadorTest.evaluar.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EvaluadorTest.evaluarCond.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EvaluadorTest.evaluarDefun.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EvaluadorTest.evaluarEquals.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EvaluadorTest.evaluarFact.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EvaluadorTest.evaluarRec.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EvaluadorTest.evaluarResta.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EvaluadorTest.evaluarSetq.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EvaluadorTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SnippetsTest.romperCodigo.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.TokenizerTest.tokenisation.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/juan/Documentos/education/U/Semestres/Semestre_9/Algoritmos y Estructura&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -118,8 +107,8 @@
       <recent name="uvg.edu.gt" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EvaluadorTest.evaluarFact">
-    <configuration name="EvaluadorTest.evaluarCond" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.EvaluadorTest.evaluarDefun">
+    <configuration name="EvaluadorTest.evaluar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Interprete_LISP" />
       <extension name="coverage">
         <pattern>
@@ -129,7 +118,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="uvg.edu.gt" />
       <option name="MAIN_CLASS_NAME" value="uvg.edu.gt.EvaluadorTest" />
-      <option name="METHOD_NAME" value="evaluarCond" />
+      <option name="METHOD_NAME" value="evaluar" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -183,7 +172,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EvaluadorTest.evaluarResta" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SnippetsTest.romperCodigo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Interprete_LISP" />
       <extension name="coverage">
         <pattern>
@@ -192,8 +181,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="uvg.edu.gt" />
-      <option name="MAIN_CLASS_NAME" value="uvg.edu.gt.EvaluadorTest" />
-      <option name="METHOD_NAME" value="evaluarResta" />
+      <option name="MAIN_CLASS_NAME" value="uvg.edu.gt.SnippetsTest" />
+      <option name="METHOD_NAME" value="romperCodigo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -201,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.EvaluadorTest.evaluarDefun" />
+        <item itemvalue="JUnit.SnippetsTest.romperCodigo" />
+        <item itemvalue="JUnit.EvaluadorTest.evaluar" />
         <item itemvalue="JUnit.EvaluadorTest.evaluarFact" />
         <item itemvalue="JUnit.EvaluadorTest.evaluarRec" />
-        <item itemvalue="JUnit.EvaluadorTest.evaluarCond" />
-        <item itemvalue="JUnit.EvaluadorTest.evaluarResta" />
-        <item itemvalue="JUnit.EvaluadorTest.evaluarDefun" />
       </list>
     </recent_temporary>
   </component>
@@ -240,7 +229,9 @@
       <workItem from="1709228146600" duration="1069000" />
       <workItem from="1710172959987" duration="14108000" />
       <workItem from="1710249057732" duration="2877000" />
-      <workItem from="1710262801070" duration="6260000" />
+      <workItem from="1710262801070" duration="7109000" />
+      <workItem from="1710274599162" duration="128000" />
+      <workItem from="1710341294881" duration="2387000" />
     </task>
     <task id="LOCAL-00001" summary="Se creo la classe Leo para leer los archivos de texto con código">
       <option name="closed" value="true" />
@@ -314,7 +305,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709576013065</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Merge remote-tracking branch 'origin/master'&#10;Se logro implementar recursividad, la funcion factorial funciona :)">
+      <option name="closed" value="true" />
+      <created>1710269158842</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1710269158842</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,6 +342,8 @@
     <MESSAGE value="Se agrego atom" />
     <MESSAGE value="Merging Carlos to master" />
     <MESSAGE value="Merge branch 'Carlos'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/uvg/edu/gt/Defun.java&#10;#&#9;src/main/java/uvg/edu/gt/Evaluador.java&#10;#&#9;src/main/java/uvg/edu/gt/Funcion.java&#10;#&#9;src/main/java/uvg/edu/gt/Vocabulario.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'Carlos'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/uvg/edu/gt/Defun.java&#10;#&#9;src/main/java/uvg/edu/gt/Evaluador.java&#10;#&#9;src/main/java/uvg/edu/gt/Funcion.java&#10;#&#9;src/main/java/uvg/edu/gt/Vocabulario.java" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;Se logro implementar recursividad, la funcion factorial funciona :)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;Se logro implementar recursividad, la funcion factorial funciona :)" />
   </component>
 </project>
