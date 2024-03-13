@@ -4,346 +4,92 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79803137-7b0e-48ff-9101-7579cc4e1893" name="Changes" comment="Merge remote-tracking branch 'origin/master'&#10;Se logro implementar recursividad, la funcion factorial funciona :)">
+    <list default="true" id="02d303f8-d38e-4147-bb89-5020d833e94b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Codigo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Snippets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Snippets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/App.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="JUnit5 Test Class" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="Carlos Villagran &lt;cjvillagranmata@gmial.com&gt;" />
-      </list>
-    </option>
-    <option name="PUSH_AUTO_UPDATE" value="true" />
-    <option name="PUSH_TAGS">
-      <GitPushTagMode>
-        <option name="argument" value="--tags" />
-        <option name="title" value="All" />
-      </GitPushTagMode>
-    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="detached7" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="MIXED" />
-  </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;JusSolo&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="8e767e75-4763-4b61-b109-fc28afd115d8" />
-        <option name="url" value="https://github.com/JusSolo/Interprete_LISP.git" />
-      </UrlAndAccount>
-    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 3
-}</component>
-  <component name="ProjectId" id="2cHhvc5SePhjv2XO0LHeTW1Hcyk" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2dgVExtAz8ntlzVrVKFXEMCx8K3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.App.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EvaluadorTest.evaluar.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EvaluadorTest.evaluarCond.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EvaluadorTest.evaluarDefun.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EvaluadorTest.evaluarEquals.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EvaluadorTest.evaluarFact.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EvaluadorTest.evaluarRec.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EvaluadorTest.evaluarResta.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EvaluadorTest.evaluarSetq.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EvaluadorTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.SnippetsTest.romperCodigo.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TokenizerTest.tokenisation.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/juan/Documentos/education/U/Semestres/Semestre_9/Algoritmos y Estructura&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Menu.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="uvg.edu.gt" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EvaluadorTest.evaluarDefun">
-    <configuration name="EvaluadorTest.evaluar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Interprete_LISP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uvg.edu.gt.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="uvg.edu.gt" />
-      <option name="MAIN_CLASS_NAME" value="uvg.edu.gt.EvaluadorTest" />
-      <option name="METHOD_NAME" value="evaluar" />
-      <option name="TEST_OBJECT" value="method" />
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Interprete_LISP0" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EvaluadorTest.evaluarDefun" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Interprete_LISP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uvg.edu.gt.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="uvg.edu.gt" />
-      <option name="MAIN_CLASS_NAME" value="uvg.edu.gt.EvaluadorTest" />
-      <option name="METHOD_NAME" value="evaluarDefun" />
-      <option name="TEST_OBJECT" value="method" />
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Interprete_LISP0" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EvaluadorTest.evaluarFact" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Interprete_LISP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uvg.edu.gt.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="uvg.edu.gt" />
-      <option name="MAIN_CLASS_NAME" value="uvg.edu.gt.EvaluadorTest" />
-      <option name="METHOD_NAME" value="evaluarFact" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EvaluadorTest.evaluarRec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Interprete_LISP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uvg.edu.gt.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="uvg.edu.gt" />
-      <option name="MAIN_CLASS_NAME" value="uvg.edu.gt.EvaluadorTest" />
-      <option name="METHOD_NAME" value="evaluarRec" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SnippetsTest.romperCodigo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Interprete_LISP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="uvg.edu.gt.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="uvg.edu.gt" />
-      <option name="MAIN_CLASS_NAME" value="uvg.edu.gt.SnippetsTest" />
-      <option name="METHOD_NAME" value="romperCodigo" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.EvaluadorTest.evaluarDefun" />
-        <item itemvalue="JUnit.SnippetsTest.romperCodigo" />
-        <item itemvalue="JUnit.EvaluadorTest.evaluar" />
-        <item itemvalue="JUnit.EvaluadorTest.evaluarFact" />
-        <item itemvalue="JUnit.EvaluadorTest.evaluarRec" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-e47b9c39" />
-        <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-76dd8dae" />
+        <option value="jdk-20.0.2-corretto-20.0.2.1-f644763e9732-27d99999" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="79803137-7b0e-48ff-9101-7579cc4e1893" name="Changes" comment="" />
-      <created>1707774645579</created>
+      <changelist id="02d303f8-d38e-4147-bb89-5020d833e94b" name="Changes" comment="" />
+      <created>1710429600962</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1707774645579</updated>
-      <workItem from="1707774646916" duration="12000" />
-      <workItem from="1708007022352" duration="6000" />
-      <workItem from="1708008091366" duration="7486000" />
-      <workItem from="1708097901274" duration="3264000" />
-      <workItem from="1708361216399" duration="2248000" />
-      <workItem from="1708389542555" duration="5750000" />
-      <workItem from="1708446789444" duration="62000" />
-      <workItem from="1708610681468" duration="7926000" />
-      <workItem from="1708651972243" duration="644000" />
-      <workItem from="1708697054034" duration="8384000" />
-      <workItem from="1708962468187" duration="12418000" />
-      <workItem from="1709211292215" duration="5125000" />
-      <workItem from="1709228146600" duration="1069000" />
-      <workItem from="1710172959987" duration="14108000" />
-      <workItem from="1710249057732" duration="2877000" />
-      <workItem from="1710262801070" duration="7109000" />
-      <workItem from="1710274599162" duration="128000" />
-      <workItem from="1710341294881" duration="2387000" />
+      <updated>1710429600962</updated>
+      <workItem from="1710429602316" duration="2077000" />
     </task>
-    <task id="LOCAL-00001" summary="Se creo la classe Leo para leer los archivos de texto con código">
-      <option name="closed" value="true" />
-      <created>1707776791474</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1707776791474</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Se creo la Snippets para crear una lista de listas en la cual representa una &quot;matriz&quot; con un comando por linea y un caracter por &quot;columna&quot;">
-      <option name="closed" value="true" />
-      <created>1708392655563</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1708392655563</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Se creo la Snippets para crear una lista de listas en la cual representa una &quot;matriz&quot; con un comando por linea y un caracter por &quot;columna&quot;">
-      <option name="closed" value="true" />
-      <created>1708621660455</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1708621660455</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Se agrego operador suma">
-      <option name="closed" value="true" />
-      <created>1708652589869</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1708652589869</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Se agrego operador suma">
-      <option name="closed" value="true" />
-      <created>1708704036012</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1708704036012</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Se agrego operador Vocabulario y Evaluador">
-      <option name="closed" value="true" />
-      <created>1708704353901</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1708704353901</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Se agrego defun comando para crear funciones y la clase funcion qur se encarga de interpretar los comandos definidos en la funcion ada ves que se opera con una funcion, Junit test exitosos">
-      <option name="closed" value="true" />
-      <created>1709212484004</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1709212484004</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Se agrego atom">
-      <option name="closed" value="true" />
-      <created>1709214052563</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1709214052563</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Merge branch 'Carlos'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/uvg/edu/gt/Defun.java&#10;#&#9;src/main/java/uvg/edu/gt/Evaluador.java&#10;#&#9;src/main/java/uvg/edu/gt/Funcion.java&#10;#&#9;src/main/java/uvg/edu/gt/Vocabulario.java">
-      <option name="closed" value="true" />
-      <created>1709576013065</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1709576013065</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Merge remote-tracking branch 'origin/master'&#10;Se logro implementar recursividad, la funcion factorial funciona :)">
-      <option name="closed" value="true" />
-      <created>1710269158842</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1710269158842</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Se creo la classe Leo para leer los archivos de texto con código" />
-    <MESSAGE value="Se creo un primer esquema de la Clase Tokenizer" />
-    <MESSAGE value="Se decidio eliminar Tokenizer por parecer inecesario, se corrigio Snippets, ahora ya pasa la prueba unitaria" />
-    <MESSAGE value="Se creo la Snippets para crear una lista de listas en la cual representa una &quot;matriz&quot; con un comando por linea y un caracter por &quot;columna&quot;" />
-    <MESSAGE value="Se agrego Vocabulario y Evaluador (tentativo)" />
-    <MESSAGE value="Se agrego operador suma" />
-    <MESSAGE value="Se agrego operador Vocabulario y Evaluador" />
-    <MESSAGE value="Se agrego defun comando para crear funciones y la clase funcion qur se encarga de interpretar los comandos definidos en la funcion ada ves que se opera con una funcion, Junit test exitosos" />
-    <MESSAGE value="Se agrego atom" />
-    <MESSAGE value="Merging Carlos to master" />
-    <MESSAGE value="Merge branch 'Carlos'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;src/main/java/uvg/edu/gt/Defun.java&#10;#&#9;src/main/java/uvg/edu/gt/Evaluador.java&#10;#&#9;src/main/java/uvg/edu/gt/Funcion.java&#10;#&#9;src/main/java/uvg/edu/gt/Vocabulario.java" />
-    <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
-    <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;Se logro implementar recursividad, la funcion factorial funciona :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'&#10;Se logro implementar recursividad, la funcion factorial funciona :)" />
   </component>
 </project>
