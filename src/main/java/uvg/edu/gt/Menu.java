@@ -14,6 +14,7 @@ public class Menu {
             System.out.println("**Menú**");
             System.out.println("1.Ejecutar archivo desde un .txt");
             System.out.println("2. Terminal LISP");
+            System.out.println("3 Salir ");
             System.out.print("Ingrese una opción: ");
             opcion = scanner.nextInt();
 Evaluador evaluador = new Evaluador() ;
@@ -29,6 +30,16 @@ Evaluador evaluador = new Evaluador() ;
                             }
                     break;
                 case 2:
+                    System.out.println("Esta es una implmentacion de LISP Incompleta , Disfrute y espere no tener errores ") ;
+                    String comando = scanner.nextLine();
+                    List<String> L1 = Arrays.asList(comando);
+                    List<List<String>> L2 = Snippets.romperCodigo(L1) ;
+                    List<String> comando0 = L2.get(0);
+                    String salida = evaluador.evaluar(comando0);
+                    System.out.println(salida) ;
+
+                     break;
+                case 3:
                     System.out.println("¡Hasta la próxima!");
                     break;
                 default:
