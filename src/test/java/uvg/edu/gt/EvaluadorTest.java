@@ -106,7 +106,7 @@ class EvaluadorTest {
     @Test
     void evaluarFact() {// probando factorial
 
-        List<String> L1 =  Arrays.asList(" ( defun fact(n) (cond ((= n 1) (+ 1 0))   ( * n ( fact  (- n 1 ))))) ","(fact 5)");
+        List<String> L1 =  Arrays.asList(" ( defun fact(n) (cond ((= n 1) (+ 1 0))   ( * n ( fact  (- n 1 ))))) ","(fact 4)");
         List<List<String>> cod = Snippets.romperCodigo(L1);
 
         Evaluador evaluador = new Evaluador();
@@ -118,7 +118,7 @@ class EvaluadorTest {
         String set = evaluador.evaluar(L2);
 
 
-        assertEquals("120",set);
+        assertEquals("24",set);
 
     }
 }

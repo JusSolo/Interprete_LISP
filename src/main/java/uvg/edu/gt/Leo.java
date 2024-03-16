@@ -7,12 +7,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- *
+ * Esta classe solo lee archivos de texto y los traduce a List<>
  */
 public class Leo {
     public Leo(){
 
     }
+
+    /**
+     *
+     * @param nombreFichero Es la direccion completa donde se encuentra el archivo
+     * @return List<String> cada linea es un string de la lista
+     */
     public List<String> leerArchivo(String nombreFichero){
         List<String> lista = new ArrayList<String>();
         // Declarar una variable BufferedReader

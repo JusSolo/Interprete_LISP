@@ -22,7 +22,9 @@ Evaluador evaluador = new Evaluador() ;
             switch (opcion) {
                 case 1:
                     Leo leo = new Leo() ;
-                    List<String> Listainstrucciones = leo.leerArchivo("C:\\Users\\gabri\\IdeaProjects\\Interprete_LISP0\\src\\main\\java\\uvg\\edu\\gt\\Codigo.txt")  ;
+                    String dirJl = "/home/juan/Documentos/education/U/Semestres/Semestre_9/Algoritmos y Estructura/Tareas/HDT/Interprete_LISP/src/main/java/uvg/edu/gt/Codigo.txt";
+                    String dirPal = "C:\\Users\\gabri\\IdeaProjects\\Interprete_LISP0\\src\\main\\java\\uvg\\edu\\gt\\Codigo.txt";
+                    List<String> Listainstrucciones = leo.leerArchivo(dirJl)  ;
                     List<List<String>> Listainstrucciones1 = Snippets.romperCodigo(Listainstrucciones) ;
                             for(List<String>comando:Listainstrucciones1) {
                                 String salida = evaluador.evaluar(comando);
@@ -30,6 +32,7 @@ Evaluador evaluador = new Evaluador() ;
                             }
                     break;
                 case 2:
+
                     System.out.println("Esta es una implmentacion de LISP Incompleta , Disfrute y espere no tener errores ") ;
                     String comando = scanner.nextLine();
                     List<String> L1 = Arrays.asList(comando);

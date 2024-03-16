@@ -19,7 +19,11 @@ public class Evaluador {
         vocabulario = Vocabulario.obtenerInstancia();
     }
 
-
+    /**
+     *
+     * @param comando es la linea de texto ya toquenizada a evaluar
+     * @return devuelve la salida del comando como string
+     */
     public  String  evaluar(List<String> comando){ //la creacion de funciones es un caso aparte, no es una operacion almenos para este interprete
         if (comando.get(1).equals("defun")){
             return Defun.DefFun(comando);

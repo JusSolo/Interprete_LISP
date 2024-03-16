@@ -10,6 +10,11 @@ import java.util.Stack;
  *
  */
 public class Snippets {
+    /**
+     *
+     * @param programa 
+     * @return
+     */
     public static List<String> fullLPL( List<String> programa){
         Stack<String> parentesis = new Stack<>();
         List<String> prog2 = new ArrayList<String>();
