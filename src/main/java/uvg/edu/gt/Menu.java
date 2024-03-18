@@ -24,7 +24,7 @@ Evaluador evaluador = new Evaluador() ;
                     Leo leo = new Leo() ;
                     String dirJl = "/home/juan/Documentos/education/U/Semestres/Semestre_9/Algoritmos y Estructura/Tareas/HDT/Interprete_LISP/src/main/java/uvg/edu/gt/Codigo.txt";
                     String dirPal = "C:\\Users\\gabri\\IdeaProjects\\Interprete_LISP0\\src\\main\\java\\uvg\\edu\\gt\\Codigo.txt";
-                    List<String> Listainstrucciones = leo.leerArchivo(dirJl)  ;
+                    List<String> Listainstrucciones = leo.leerArchivo(dirPal)  ;
                     List<List<String>> Listainstrucciones1 = Snippets.romperCodigo(Listainstrucciones) ;
                             for(List<String>comando:Listainstrucciones1) {
                                 String salida = evaluador.evaluar(comando);
@@ -32,22 +32,41 @@ Evaluador evaluador = new Evaluador() ;
                             }
                     break;
                 case 2:
+                    System.out.println("Esta es una implmentacion de LISP Incompleta , Disfrute y espere no tener errores ");
+                    System.out.print("Ingrese una expresión LISP (o \"salir\" para terminar): ");
+                    while (true) {
 
-                    System.out.println("Esta es una implmentacion de LISP Incompleta , Disfrute y espere no tener errores ") ;
-                    String comando = scanner.nextLine();
-                    List<String> L1 = Arrays.asList(comando);
-                    List<List<String>> L2 = Snippets.romperCodigo(L1) ;
-                    List<String> comando0 = L2.get(0);
-                    String salida = evaluador.evaluar(comando0);
-                    System.out.println(salida) ;
+                        System.out.print("*");
+                        String comando = scanner.nextLine();
 
-                     break;
+                        if (comando.equalsIgnoreCase("salir")) {
+                            break;
+                        }
+
+                        if (comando.isEmpty()) {
+                            System.out.println("Error: Debe ingresar una expresión LISP válida.");
+                            continue;
+                        }
+
+                        List<String> L1 = Arrays.asList(comando);
+                        List<List<String>> L2 = Snippets.romperCodigo(L1);
+
+                        if (L2.isEmpty()) {
+                            System.out.println("Error: La expresión LISP no se pudo analizar.");
+                            continue;
+                        }
+
+                        List<String> comando0 = L2.get(0);
+                        String salida = evaluador.evaluar(comando0);
+                        System.out.println(salida);
+                    }
+                    break;
                 case 3:
                     System.out.println("¡Hasta la próxima!");
                     break;
                 default:
                     System.out.println("Opción no válida. Intente de nuevo.");
             }
-        } while (opcion != 2);
+        } while (opcion != 3);
     }
 }

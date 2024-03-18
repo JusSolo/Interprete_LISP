@@ -17,7 +17,7 @@ public class Croissant implements Operador{
         String b1 = vocabulario.interpretar(b0).toString();
         Integer a = Integer.parseInt(a1);
         Integer b = Integer.parseInt(b1);
-        if (a < b ){
+        if (a > b ){
             valores.add("t");
         }
         else {
