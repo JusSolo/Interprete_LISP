@@ -26,13 +26,18 @@ public class Vocabulario {
 
         Operador o6 = new Setq();
         memoria.put("setq", o6);
+
         Operador o7 = new Croissant();
         memoria.put("<", o7);
+
         Operador o8 = new Decroissant();
         memoria.put(">", o8);
 
         Operador o9 = new Print();
         memoria.put("print", o9);
+
+        Operador o10 = new listOp();
+        memoria.put("list", o10);
 
     }
 
