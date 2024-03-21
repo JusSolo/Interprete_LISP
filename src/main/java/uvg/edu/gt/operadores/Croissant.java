@@ -1,9 +1,13 @@
-package uvg.edu.gt;
+package uvg.edu.gt.operadores;
 
-import java.util.Objects;
+import uvg.edu.gt.Vocabulario;
+
 import java.util.Stack;
 
-public class Croissant implements Operador{
+/**
+ * Este classe coresponde al operador más pequeño que (el nobre viene del frances "croisant", mas pequeño que)
+ */
+public class Croissant implements Operador {
 
     @Override
     public void operar(Stack<String> valores) {

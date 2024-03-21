@@ -1,8 +1,10 @@
-package uvg.edu.gt;
+package uvg.edu.gt.operadores;
+
+import uvg.edu.gt.Vocabulario;
 
 import java.util.Stack;
 
-public class Atom implements Operador{
+public class Atom implements Operador {
     @Override
     public void operar(Stack<String> valores) {
         Vocabulario voc = Vocabulario.obtenerInstancia();

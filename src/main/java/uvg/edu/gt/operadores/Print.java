@@ -1,8 +1,11 @@
-package uvg.edu.gt;
+package uvg.edu.gt.operadores;
+
+import uvg.edu.gt.Vocabulario;
+import uvg.edu.gt.operadores.Operador;
 
 import java.util.Stack;
 
-public class Print implements Operador{
+public class Print implements Operador {
     @Override
     public void operar(Stack<String> valores) {
         String a0 =  valores.pop();

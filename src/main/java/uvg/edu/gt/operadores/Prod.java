@@ -1,12 +1,16 @@
-package uvg.edu.gt;
+package uvg.edu.gt.operadores;
+
+import uvg.edu.gt.Vocabulario;
+import uvg.edu.gt.operadores.Operador;
 
 import java.util.Stack;
 
-public class Decroissant implements Operador{
-
-
+/**
+ * producto de enteros
+ */
+public class Prod implements Operador {
     @Override
-    public void operar(Stack<String> valores) {
+    public void operar(Stack<String> valores) {// suma es un operador binario
         // tomo de la pila los valores a operar como suma es un operador binario tomo los ultimos dos valores
         String a0 = valores.pop();
         String b0 =  valores.pop();
@@ -17,11 +21,8 @@ public class Decroissant implements Operador{
         String b1 = vocabulario.interpretar(b0).toString();
         Integer a = Integer.parseInt(a1);
         Integer b = Integer.parseInt(b1);
-        if (a < b ){
-            valores.add("t");
-        }
-        else {
-            valores.add("nil");
-        }
+
+        Integer c = a * b;
+        valores.add(Integer.toString(c));
     }
 }

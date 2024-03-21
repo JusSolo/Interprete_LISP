@@ -1,11 +1,17 @@
-package uvg.edu.gt;
+package uvg.edu.gt.operadores;
+
+import uvg.edu.gt.otros.Cond;
+import uvg.edu.gt.Vocabulario;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Stack;
 
-public class Funcion implements Operador{
+/**
+ * Al final las funciones son operadores que el programador programa
+ */
+public class Funcion implements Operador {
     private String name;
 
     private List<String> varNames ;

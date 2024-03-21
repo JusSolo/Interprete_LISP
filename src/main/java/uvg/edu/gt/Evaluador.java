@@ -1,10 +1,15 @@
 package uvg.edu.gt;
 
+import uvg.edu.gt.operadores.Operador;
+import uvg.edu.gt.otros.Cond;
+import uvg.edu.gt.otros.Defun;
+
 import java.util.List;
 import java.util.Stack;
 
 /**
- *
+ * Es en esta classe que se ejecuta cada linea de código, en ella se manda a llamar al operador que se necesite
+ * Sin duda es el corazon
  */
 public class Evaluador {
     public Stack<String> valores;

@@ -1,7 +1,12 @@
 package uvg.edu.gt;
 
+import uvg.edu.gt.operadores.*;
+
 import java.util.HashMap;
 
+/**
+ * Esra es la clse que se encarga de manejar la memoria de el interprete, como tal es la classe que conoce el significado que cada atom de lisp
+ */
 public class Vocabulario {
     private static Vocabulario instancia = null;
     private HashMap<String, Object> memoria;
@@ -38,6 +43,13 @@ public class Vocabulario {
 
         Operador o10 = new listOp();
         memoria.put("list", o10);
+
+        Operador o11 = new Atom();
+        memoria.put("atom", o11);
+
+        Operador o12 = new Quote();
+        memoria.put("quote", o12);
+
 
     }
 

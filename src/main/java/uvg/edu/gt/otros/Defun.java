@@ -1,10 +1,14 @@
-package uvg.edu.gt;
+package uvg.edu.gt.otros;
+
+import uvg.edu.gt.Vocabulario;
+import uvg.edu.gt.operadores.Funcion;
+import uvg.edu.gt.operadores.Operador;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Defun {
-    static String DefFun(List<String> instruccuines){
+    public static String DefFun(List<String> instruccuines){
 
         String name = instruccuines.get(2) ;
 

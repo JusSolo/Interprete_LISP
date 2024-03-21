@@ -1,8 +1,13 @@
-package uvg.edu.gt;
+package uvg.edu.gt.operadores;
+
+import uvg.edu.gt.Vocabulario;
 
 import java.util.Stack;
 
-public class Prod implements Operador{
+/**
+ * divicion de enteros
+ */
+public class Div implements Operador {
     @Override
     public void operar(Stack<String> valores) {// suma es un operador binario
         // tomo de la pila los valores a operar como suma es un operador binario tomo los ultimos dos valores

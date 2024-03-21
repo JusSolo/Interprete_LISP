@@ -1,9 +1,11 @@
-package uvg.edu.gt;
+package uvg.edu.gt.operadores;
+
+import uvg.edu.gt.operadores.Operador;
 
 import java.util.Objects;
 import java.util.Stack;
 
-public class Equal implements Operador{
+public class Equal implements Operador {
     @Override
     public void operar(Stack<String> valores) {
         // tomo de la pila los valores a operar como suma es un operador binario tomo los ultimos dos valores

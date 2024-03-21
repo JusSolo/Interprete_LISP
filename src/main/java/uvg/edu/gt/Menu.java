@@ -24,7 +24,7 @@ Evaluador evaluador = new Evaluador() ;
                     Leo leo = new Leo() ;
                     String dirJl = "/home/juan/Documentos/education/U/Semestres/Semestre_9/Algoritmos y Estructura/Tareas/HDT/Interprete_LISP/src/main/java/uvg/edu/gt/Codigo.txt";
                     String dirPal = "C:\\Users\\gabri\\IdeaProjects\\Interprete_LISP0\\src\\main\\java\\uvg\\edu\\gt\\Codigo.txt";
-                    List<String> Listainstrucciones = leo.leerArchivo(dirPal)  ;
+                    List<String> Listainstrucciones = leo.leerArchivo(dirJl)  ;
                     List<List<String>> Listainstrucciones1 = Snippets.romperCodigo(Listainstrucciones) ;
                             for(List<String>comando:Listainstrucciones1) {
                                 String salida = evaluador.evaluar(comando);

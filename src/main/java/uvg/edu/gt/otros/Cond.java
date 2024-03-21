@@ -1,4 +1,6 @@
-package uvg.edu.gt;
+package uvg.edu.gt.otros;
+
+import uvg.edu.gt.Evaluador;
 
 import java.time.format.SignStyle;
 import java.util.ArrayList;
@@ -7,6 +9,11 @@ import java.util.List;
 import java.util.Stack;
 
 public class Cond {
+    /**
+     * Importante: este cond no es el mismo que el clásico de LISP, funciona como un if{} else[]
+     * @param comando es la línea de código o camando en donde se escuentra cond,
+     * @param i es la posision de la linea de código en la que se encuentra el cond
+     */
     public static void mod(List<String> comando, int i){
 
         int inicio = i+0; // el indice en donde esta cond
@@ -83,6 +90,14 @@ public class Cond {
 
 
     }
+
+    /**
+     * Importante: este cond no es el mismo que el clásico de LISP, funciona como un if{} else[]
+     * Estue es el cond que se usa dentro de funciones, por las variables locales de las funciones fue necesario esta version
+     * @param comando es la línea de código o camando en donde se escuentra cond,
+     * @param i es la posision de la linea de código en la que se encuentra el cond
+     * @param variables son las variables locales propias de la funcion
+     */
 
     public static void mod(List<String> comando, int i, HashMap<String, String> variables) {
 
