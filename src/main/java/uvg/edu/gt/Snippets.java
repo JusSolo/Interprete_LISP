@@ -71,7 +71,7 @@ public class Snippets {
                 if (car.equals("\"")) { // se entra en un string al toparse con un "  se sale de el al volverse a topar en el
                     if ( isString) {
                         mot.deleteCharAt(mot.length() - 1);
-                        mot.append('"');
+                        mot.append(" \"");
                         linea2.add(String.valueOf(mot));
                         mot = new StringBuilder();
                     }
@@ -82,13 +82,17 @@ public class Snippets {
                     mot.append(' ');
                 }
                 else {
-                    linea2.add(car);
+                    if (! car.equals("\""))
+                        linea2.add(car);
+
+
                 }
 
             }
             if (!linea2.isEmpty())
                 pedasos.add(linea2);
         }
+
         return pedasos;
     }
 }

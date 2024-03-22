@@ -4,28 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02d303f8-d38e-4147-bb89-5020d833e94b" name="Changes" comment="Se modifico snipet para que reconozca Strings, ya vamos a poder programar al infame (print &quot;Hello word!&quot;)">
+    <list default="true" id="02d303f8-d38e-4147-bb89-5020d833e94b" name="Changes" comment="Se Restructuro el proyecto en paquetes&#10;- En el Paquete operadores estan todos los operadores&#10;- En el paquete otros esta Defun y Cond que no son operadores propiamente dicho, almenos como se implementaron en este liso&#10;En la carpeta principal quedaron las partes principales del código">
+      <change afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/otros/Lista.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Atom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Atom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Codigo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Codigo.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Cond.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/otros/Cond.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Croissant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Croissant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Decroissant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Decroissant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Defun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/otros/Defun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Div.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Div.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Equal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Equal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Evaluador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Evaluador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Funcion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Funcion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Operador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Operador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Print.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Print.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Prod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Prod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Quote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Quote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Resta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Resta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Setq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Setq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Suma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Suma.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Snippets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Snippets.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Vocabulario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Vocabulario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/listOp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/listOp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Funcion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Funcion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Print.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Print.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/listOp.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,23 +47,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Menu.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.EvaluadorTest.evaluarFact.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Interprete_LISP [compile].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Menu.executor": "Run",
+    "JUnit.EvaluadorTest.evaluarFact.executor": "Run",
+    "Maven.Interprete_LISP [compile].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="uvg.edu.gt" />
@@ -87,7 +75,7 @@
       <module name="Interprete_LISP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uvg.edu.gt.operadores.*" />
+          <option name="PATTERN" value="uvg.edu.gt.otros.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,7 +87,7 @@
       <module name="Interprete_LISP" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="uvg.edu.gt.operadores.*" />
+          <option name="PATTERN" value="uvg.edu.gt.otros.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,13 +137,45 @@
       <workItem from="1710429602316" duration="2077000" />
       <workItem from="1710891466100" duration="4234000" />
     </task>
+    <task id="LOCAL-00001" summary="Se Restructuro el proyecto en paquetes&#10;- En el Paquete operadores estan todos los operadores&#10;- En el paquete otros esta Defun y Cond que no son operadores propiamente dicho, almenos como se implementaron en este liso&#10;En la carpeta principal quedaron las partes principales del código">
+      <option name="closed" value="true" />
+      <created>1711027594382</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711027594382</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Se modifico snipet para que reconozca Strings, ya vamos a poder programar al infame (print &quot;Hello word!&quot;)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se modifico snipet para que reconozca Strings, ya vamos a poder programar al infame (print &quot;Hello word!&quot;)" />
+    <MESSAGE value="Se Restructuro el proyecto en paquetes&#10;- En el Paquete operadores estan todos los operadores&#10;- En el paquete otros esta Defun y Cond que no son operadores propiamente dicho, almenos como se implementaron en este liso&#10;En la carpeta principal quedaron las partes principales del código" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se Restructuro el proyecto en paquetes&#10;- En el Paquete operadores estan todos los operadores&#10;- En el paquete otros esta Defun y Cond que no son operadores propiamente dicho, almenos como se implementaron en este liso&#10;En la carpeta principal quedaron las partes principales del código" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Setq.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

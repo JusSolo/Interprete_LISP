@@ -2,6 +2,7 @@ package uvg.edu.gt.operadores;
 
 import uvg.edu.gt.otros.Cond;
 import uvg.edu.gt.Vocabulario;
+import uvg.edu.gt.otros.Lista;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -39,6 +40,7 @@ public class Funcion implements Operador {
         }
         // se evalua tomando el nombre de las variables
         boolean precedQuote = false;
+        int iLi = 0;
         for (int j = 0; j < instruccionesL.size(); j++){
             String V = instruccionesL.get(j);
             String v;
@@ -57,13 +59,18 @@ public class Funcion implements Operador {
                     parentesis.pop();
                     if (!operaciones.isEmpty()) {
                         String op0 = operaciones.pop();
-                        Operador op = (Operador) vocabulario.interpretar(op0);
-                        // System.out.println(valores);
-                        op.operar(valores);
+                        if (op0.equals("list")){
+                            Lista.operar(valores,(j-iLi-1));
+                        }
+                        else {
+                            Operador op = (Operador) vocabulario.interpretar(op0);
+                            // System.out.println(valores);
+                            op.operar(valores);
+                        }
                     }
-                    else{
-                     boolean totototototo = true;
-                    }
+                  //  else{
+                    // boolean totototototo = true;
+                    //}
                     break;
                 case "quote":
                     precedQuote = true;
@@ -73,6 +80,10 @@ public class Funcion implements Operador {
                     Cond.mod(instruccionesL,j,variables);
                     //System.out.println(instrucciones);
                     j--;
+                    break;
+                case "list":
+                    operaciones.add(v);
+                    iLi = j;
                     break;
                 default:
                     //algo

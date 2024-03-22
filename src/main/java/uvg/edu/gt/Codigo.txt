@@ -1,15 +1,16 @@
 ( defun fact(n)
     (cond ((= n 1)
-        (+ 1 0))
+        ( 1 ))
     ( * n ( fact  (- n 1 )))))
-
+(print " !5= ")
 (fact 5)
+(print " !4= ")
 (fact 4)
-(fact 3)
+
 
 ( defun fibo(n)
     (cond ((< n 2)
-        (+ n 0))
+        (n))
     ( + (fibo (- n 1)) ( fibo  (- n 2 )))))
 
 (print " Primeros valores de la sucesion de Fibonacci: ")

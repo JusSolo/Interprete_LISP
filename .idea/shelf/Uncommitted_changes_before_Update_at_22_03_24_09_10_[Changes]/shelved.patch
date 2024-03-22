@@ -1,0 +1,456 @@
+Index: src/main/java/uvg/edu/gt/Vocabulario.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package uvg.edu.gt;\n\nimport uvg.edu.gt.operadores.*;\n\nimport java.util.HashMap;\n\n/**\n * Esra es la clse que se encarga de manejar la memoria de el interprete, como tal es la classe que conoce el significado que cada atom de lisp\n */\npublic class Vocabulario {\n    private static Vocabulario instancia = null;\n    private HashMap<String, Object> memoria;\n\n    private Vocabulario() {// con forme definamos las operaciones vamos llenando esto\n        memoria = new HashMap<>();\n        Operador o1 = new Suma();\n        memoria.put(\"+\", o1);\n\n        Operador o2 = new Resta();\n        memoria.put(\"-\", o2);\n\n        Operador o3 = new Div();\n        memoria.put(\"/\", o3);\n\n        Operador o4 = new Prod();\n        memoria.put(\"*\", o4);\n\n        Operador o5 = new Equal();\n        memoria.put(\"=\", o5);\n        memoria.put(\"equal\", o5);\n\n        Operador o6 = new Setq();\n        memoria.put(\"setq\", o6);\n\n        Operador o7 = new Croissant();\n        memoria.put(\"<\", o7);\n\n        Operador o8 = new Decroissant();\n        memoria.put(\">\", o8);\n\n        Operador o9 = new Print();\n        memoria.put(\"print\", o9);\n\n        Operador o10 = new listOp();\n        memoria.put(\"list\", o10);\n\n        Operador o11 = new Atom();\n        memoria.put(\"atom\", o11);\n\n        Operador o12 = new Quote();\n        memoria.put(\"quote\", o12);\n\n\n    }\n\n    /**\n     *\n     * @return devuelve la única instacia que puede haber en el programa de vocabulario o la instacia de no existir\n     */\n    public static Vocabulario obtenerInstancia() {\n        if (instancia == null) {\n            instancia = new Vocabulario();\n        }\n        return instancia;\n    }\n\n    /**\n     *\n     * @param simbolo busca el simbolo en la memoria o interpreta si es entero y cadena\n     * @return devuelve el valor que representa el simbolo, si es una variable devuelve su valor, si es un entero devuelve un entero si no supone que es un string y lo devuelve talcual\n     */\n    public Object interpretar(String simbolo) {\n        if (memoria.containsKey(simbolo)) { // el símbolo es una variable\n            return memoria.get(simbolo);\n        }\n        else if (isInt(simbolo)) { // el símbolo es un entero\n            return Integer.parseInt(simbolo);\n        }\n        return simbolo; // Si no es ni entero ni símbolo, debería ser una cadena\n    }\n\n    /**\n     *\n     * @param simbolo simbolo que se desea saber si es un operador, es decir una palabra reservada de lisp que tienen parametros y devuelve algo\n     * @return booleano true si es oberador false si no\n     */\n    public boolean isOperador(String simbolo) {\n        return memoria.containsKey(simbolo) && memoria.get(simbolo) instanceof Operador;\n    }\n\n    /**\n     *\n     * @param str es la cadena que se desea saber si es entero\n     * @return devuelve true si la cadena representa un entero y false si no\n     */\n    private boolean isInt(String str) {\n        try {\n            Integer.parseInt(str);\n            return true;\n        } catch (NumberFormatException e) {\n            return false;\n        }\n    }\n\n    /**\n     * Sive para definir nuevas variables y funciones\n     * @param name nombre de la variable\n     * @param value valor de la variable\n     */\n    public void addMemori(String name, Object value){\n        memoria.put(name,value);\n    }\n\n    /**\n     *\n     * @param simbolo cadena que se desea saber si es un atomo\n     * @return boolean true si es atomo y false si no\n     */\n    public boolean isAtom(String simbolo){\n        return   memoria.containsKey(simbolo) || isInt(simbolo) ; // tentativo || isString(simbolo)\n    }\n\n    /**\n     *\n     * @return devuelve la memoria con todas las variables, funciones, operadores y demas cosas que lisp entiende\n     */\n    public HashMap<String, Object> getMemoria() {\n        return memoria;\n    }\n}\n\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/uvg/edu/gt/Vocabulario.java b/src/main/java/uvg/edu/gt/Vocabulario.java
+--- a/src/main/java/uvg/edu/gt/Vocabulario.java	(revision 76a685de67d08c4d876e96875621a59e11891ced)
++++ b/src/main/java/uvg/edu/gt/Vocabulario.java	(date 1711030319853)
+@@ -2,6 +2,7 @@
+ 
+ import uvg.edu.gt.operadores.*;
+ 
++
+ import java.util.HashMap;
+ 
+ /**
+@@ -41,8 +42,6 @@
+         Operador o9 = new Print();
+         memoria.put("print", o9);
+ 
+-        Operador o10 = new listOp();
+-        memoria.put("list", o10);
+ 
+         Operador o11 = new Atom();
+         memoria.put("atom", o11);
+Index: src/main/java/uvg/edu/gt/Codigo.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>( defun fact(n)\n    (cond ((= n 1)\n        (+ 1 0))\n    ( * n ( fact  (- n 1 )))))\n\n(fact 5)\n(fact 4)\n(fact 3)\n\n( defun fibo(n)\n    (cond ((< n 2)\n        (+ n 0))\n    ( + (fibo (- n 1)) ( fibo  (- n 2 )))))\n\n(print \" Primeros valores de la sucesion de Fibonacci: \")\n(fibo 1)\n(fibo 2)\n(fibo 3)\n(fibo 4)\n(fibo 5)\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/uvg/edu/gt/Codigo.txt b/src/main/java/uvg/edu/gt/Codigo.txt
+--- a/src/main/java/uvg/edu/gt/Codigo.txt	(revision 76a685de67d08c4d876e96875621a59e11891ced)
++++ b/src/main/java/uvg/edu/gt/Codigo.txt	(date 1711033767265)
+@@ -1,15 +1,16 @@
+ ( defun fact(n)
+     (cond ((= n 1)
+-        (+ 1 0))
++        ( 1 ))
+     ( * n ( fact  (- n 1 )))))
+-
++(print " !5= ")
+ (fact 5)
++(print " !4= ")
+ (fact 4)
+-(fact 3)
++
+ 
+ ( defun fibo(n)
+     (cond ((< n 2)
+-        (+ n 0))
++        (n))
+     ( + (fibo (- n 1)) ( fibo  (- n 2 )))))
+ 
+ (print " Primeros valores de la sucesion de Fibonacci: ")
+Index: src/main/java/uvg/edu/gt/Snippets.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package uvg.edu.gt;\n\n\nimport java.util.ArrayList;\nimport java.util.Arrays;\nimport java.util.List;\nimport java.util.Stack;\n\n/**\n *\n */\npublic class Snippets {\n    /**\n     *\n     * @param programa \n     * @return\n     */\n    public static List<String> fullLPL( List<String> programa){\n        Stack<String> parentesis = new Stack<>();\n        List<String> prog2 = new ArrayList<String>();\n\n        StringBuilder l = new StringBuilder();\n        for (String linea : programa) {\n            linea.toLowerCase(); // nuestro interprete solo conoce minusculas\n            for (int j = 0; j < linea.length(); j++) {\n                char car = linea.charAt(j);\n                switch (car) {\n                    case '(':\n                        parentesis.add(\"-\");\n                        l.append(\" ( \");\n                        break;\n                    case ')':\n                        parentesis.pop();\n                        l.append(\" ) \");\n                        break;\n                    default:\n                        l.append(car);\n                }\n\n\n            }\n            if (parentesis.isEmpty()) {\n                prog2.add(l.toString());\n                l = new StringBuilder();\n\n            }\n        }\n        return prog2;\n\n    }\n\n    public static List<List<String>> romperCodigo(List<String> programa){\n        programa = fullLPL(programa);\n        List<List<String>> pedasos = new ArrayList<>();\n        boolean isString = false;\n        for (int i = 0; i < programa.size(); i++){\n\n            String[] linea = programa.get(i).split(\" \");\n\n\n            List<String> linea1  = new ArrayList<>();\n            for (String str : linea) {\n                if (!str.isEmpty()) {\n                    linea1.add(str);\n                }\n            }\n            List<String> linea2  = new ArrayList<>();\n            StringBuilder mot = new StringBuilder();\n            for (int j = 0; j < linea1.size(); j++){\n                String car = linea1.get(j);\n                if (car.equals(\"\\\"\")) { // se entra en un string al toparse con un \"  se sale de el al volverse a topar en el\n                    if ( isString) {\n                        mot.deleteCharAt(mot.length() - 1);\n                        mot.append('\"');\n                        linea2.add(String.valueOf(mot));\n                        mot = new StringBuilder();\n                    }\n                    isString = isString == false;\n                }\n                if (isString){\n                    mot.append(car);\n                    mot.append(' ');\n                }\n                else {\n                    linea2.add(car);\n                }\n\n            }\n            if (!linea2.isEmpty())\n                pedasos.add(linea2);\n        }\n        return pedasos;\n    }\n}\n\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/uvg/edu/gt/Snippets.java b/src/main/java/uvg/edu/gt/Snippets.java
+--- a/src/main/java/uvg/edu/gt/Snippets.java	(revision 76a685de67d08c4d876e96875621a59e11891ced)
++++ b/src/main/java/uvg/edu/gt/Snippets.java	(date 1711032792722)
+@@ -71,7 +71,7 @@
+                 if (car.equals("\"")) { // se entra en un string al toparse con un "  se sale de el al volverse a topar en el
+                     if ( isString) {
+                         mot.deleteCharAt(mot.length() - 1);
+-                        mot.append('"');
++                        mot.append(" \"");
+                         linea2.add(String.valueOf(mot));
+                         mot = new StringBuilder();
+                     }
+@@ -82,13 +82,17 @@
+                     mot.append(' ');
+                 }
+                 else {
+-                    linea2.add(car);
++                    if (! car.equals("\""))
++                        linea2.add(car);
++
++
+                 }
+ 
+             }
+             if (!linea2.isEmpty())
+                 pedasos.add(linea2);
+         }
++
+         return pedasos;
+     }
+ }
+Index: src/main/java/uvg/edu/gt/operadores/Print.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package uvg.edu.gt.operadores;\n\nimport uvg.edu.gt.Vocabulario;\nimport uvg.edu.gt.operadores.Operador;\n\nimport java.util.Stack;\n\npublic class Print implements Operador {\n    @Override\n    public void operar(Stack<String> valores) {\n        String a0 =  valores.pop();\n        String b0 = valores.pop();\n        // llamo al vocabulario (Esto incluye a variables)\n        Vocabulario vocabulario = Vocabulario.obtenerInstancia();\n        // Buscamos los valores en el vocabulario\n        String a1 =  vocabulario.interpretar(a0).toString();\n        String b1 =  vocabulario.interpretar(b0).toString();\n        System.out.println(b1);\n        System.out.println(b1);\n    }\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/uvg/edu/gt/operadores/Print.java b/src/main/java/uvg/edu/gt/operadores/Print.java
+--- a/src/main/java/uvg/edu/gt/operadores/Print.java	(revision 76a685de67d08c4d876e96875621a59e11891ced)
++++ b/src/main/java/uvg/edu/gt/operadores/Print.java	(date 1711032950978)
+@@ -8,14 +8,14 @@
+ public class Print implements Operador {
+     @Override
+     public void operar(Stack<String> valores) {
+-        String a0 =  valores.pop();
++       // String a0 =  valores.pop();
+         String b0 = valores.pop();
+         // llamo al vocabulario (Esto incluye a variables)
+         Vocabulario vocabulario = Vocabulario.obtenerInstancia();
+         // Buscamos los valores en el vocabulario
+-        String a1 =  vocabulario.interpretar(a0).toString();
++      //  String a1 =  vocabulario.interpretar(a0).toString();
+         String b1 =  vocabulario.interpretar(b0).toString();
+         System.out.println(b1);
+-        System.out.println(b1);
++
+     }
+ }
+Index: src/main/java/uvg/edu/gt/operadores/Funcion.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package uvg.edu.gt.operadores;\n\nimport uvg.edu.gt.otros.Cond;\nimport uvg.edu.gt.Vocabulario;\n\nimport java.util.ArrayList;\nimport java.util.HashMap;\nimport java.util.List;\nimport java.util.Stack;\n\n/**\n * Al final las funciones son operadores que el programador programa\n */\npublic class Funcion implements Operador {\n    private String name;\n\n    private List<String> varNames ;\n\n\n    private List<String> instrucciones;\n\n    public Funcion(String name, List<String> varNames, List<String> instrucciones) {\n        this.name = name;\n        this.varNames = varNames;\n        this.instrucciones = instrucciones;\n\n    }\n\n    @Override\n    public void operar(Stack<String> valores) {\n        List<String> instruccionesL = new ArrayList<>(instrucciones) ;\n        Stack<String> operaciones = new Stack<String>();\n        Stack<String> parentesis = new Stack<String>();\n        HashMap<String, String> variables = new HashMap<String,String>();\n        Vocabulario vocabulario = Vocabulario.obtenerInstancia();\n        // tomo de la pila los valores a operar\n        for (int i = 0; i < varNames.size(); i++){\n            variables.put(varNames.get(i),valores.pop());\n        }\n        // se evalua tomando el nombre de las variables\n        boolean precedQuote = false;\n        for (int j = 0; j < instruccionesL.size(); j++){\n            String V = instruccionesL.get(j);\n            String v;\n            // revisa si v es una variable local\n            if (variables.containsKey(V))\n                v = variables.get(V);\n            else\n                v = V;\n\n            switch (v){\n                case \"(\":\n                    //algo\n                    parentesis.add(\"-\");\n                    break;\n                case \")\":\n                    parentesis.pop();\n                    if (!operaciones.isEmpty()) {\n                        String op0 = operaciones.pop();\n                        Operador op = (Operador) vocabulario.interpretar(op0);\n                        // System.out.println(valores);\n                        op.operar(valores);\n                    }\n                    else{\n                     boolean totototototo = true;\n                    }\n                    break;\n                case \"quote\":\n                    precedQuote = true;\n                    operaciones.add(v);\n                    break;\n                case \"cond\":\n                    Cond.mod(instruccionesL,j,variables);\n                    //System.out.println(instrucciones);\n                    j--;\n                    break;\n                default:\n                    //algo\n                    if (precedQuote) {\n                        precedQuote = false;\n                        if (variables.containsKey(v))\n                            valores.add(variables.get(v));\n                        valores.add(v);\n                    }\n                    else if (vocabulario.isOperador(v))\n                        operaciones.add(v);\n\n                    else\n                        valores.add(v);\n                    break;\n\n            }\n\n        }\n\n\n\n\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/uvg/edu/gt/operadores/Funcion.java b/src/main/java/uvg/edu/gt/operadores/Funcion.java
+--- a/src/main/java/uvg/edu/gt/operadores/Funcion.java	(revision 76a685de67d08c4d876e96875621a59e11891ced)
++++ b/src/main/java/uvg/edu/gt/operadores/Funcion.java	(date 1711030999959)
+@@ -2,6 +2,7 @@
+ 
+ import uvg.edu.gt.otros.Cond;
+ import uvg.edu.gt.Vocabulario;
++import uvg.edu.gt.otros.Lista;
+ 
+ import java.util.ArrayList;
+ import java.util.HashMap;
+@@ -39,6 +40,7 @@
+         }
+         // se evalua tomando el nombre de las variables
+         boolean precedQuote = false;
++        int iLi = 0;
+         for (int j = 0; j < instruccionesL.size(); j++){
+             String V = instruccionesL.get(j);
+             String v;
+@@ -57,13 +59,18 @@
+                     parentesis.pop();
+                     if (!operaciones.isEmpty()) {
+                         String op0 = operaciones.pop();
+-                        Operador op = (Operador) vocabulario.interpretar(op0);
+-                        // System.out.println(valores);
+-                        op.operar(valores);
+-                    }
+-                    else{
+-                     boolean totototototo = true;
++                        if (op0.equals("list")){
++                            Lista.operar(valores,(j-iLi-1));
++                        }
++                        else {
++                            Operador op = (Operador) vocabulario.interpretar(op0);
++                            // System.out.println(valores);
++                            op.operar(valores);
++                        }
+                     }
++                  //  else{
++                    // boolean totototototo = true;
++                    //}
+                     break;
+                 case "quote":
+                     precedQuote = true;
+@@ -73,6 +80,10 @@
+                     Cond.mod(instruccionesL,j,variables);
+                     //System.out.println(instrucciones);
+                     j--;
++                    break;
++                case "list":
++                    operaciones.add(v);
++                    iLi = j;
+                     break;
+                 default:
+                     //algo
+Index: src/main/java/uvg/edu/gt/Evaluador.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package uvg.edu.gt;\n\nimport uvg.edu.gt.operadores.Operador;\nimport uvg.edu.gt.otros.Cond;\nimport uvg.edu.gt.otros.Defun;\n\nimport java.util.List;\nimport java.util.Stack;\n\n/**\n * Es en esta classe que se ejecuta cada linea de código, en ella se manda a llamar al operador que se necesite\n * Sin duda es el corazon\n */\npublic class Evaluador {\n    public Stack<String> valores;\n    private Stack<String> operaciones;\n    private Stack<String> parentesis;\n    public Vocabulario vocabulario;\n\n    public Evaluador(){\n        valores = new Stack<String>();\n        operaciones = new Stack<String>();\n        parentesis = new Stack<String>();\n        vocabulario = Vocabulario.obtenerInstancia();\n    }\n\n    /**\n     *\n     * @param comando es la linea de texto ya toquenizada a evaluar\n     * @return devuelve la salida del comando como string\n     */\n    public  String  evaluar(List<String> comando){ //la creacion de funciones es un caso aparte, no es una operacion almenos para este interprete\n        if (comando.get(1).equals(\"defun\")){\n            return Defun.DefFun(comando);\n        }\n        boolean precedQuote = false;\n        for (int i = 0; i < comando.size(); i++) {\n            String v = comando.get(i);\n            switch (v){\n                case \"(\":\n                    //algo\n                    parentesis.add(\"-\");\n                    break;\n                case \")\":\n\n                    parentesis.pop();\n                    if (!operaciones.isEmpty()) {\n                        String op0 = operaciones.pop();\n                        Operador op = (Operador) vocabulario.interpretar(op0);\n                        op.operar(valores);\n                    }\n                    break;\n                case \"quote\":\n                    precedQuote = true;\n                    operaciones.add(v);\n                    break;\n                case \"cond\":\n                    Cond.mod(comando,i);\n                    i--;\n                    break;\n                default:\n                    //algo\n                    if (precedQuote) {\n                        precedQuote = false;\n                        valores.add(v);\n                    }\n                    else if (vocabulario.isOperador(v))\n                        operaciones.add(v);\n                    else\n                        valores.add(v);\n                    break;\n\n            }\n        }\n        if (valores.isEmpty())\n            return \"\";\n        return valores.pop();\n\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/uvg/edu/gt/Evaluador.java b/src/main/java/uvg/edu/gt/Evaluador.java
+--- a/src/main/java/uvg/edu/gt/Evaluador.java	(revision 76a685de67d08c4d876e96875621a59e11891ced)
++++ b/src/main/java/uvg/edu/gt/Evaluador.java	(date 1711030725004)
+@@ -3,7 +3,7 @@
+ import uvg.edu.gt.operadores.Operador;
+ import uvg.edu.gt.otros.Cond;
+ import uvg.edu.gt.otros.Defun;
+-
++import uvg.edu.gt.otros.Lista;
+ import java.util.List;
+ import java.util.Stack;
+ 
+@@ -30,6 +30,8 @@
+      * @return devuelve la salida del comando como string
+      */
+     public  String  evaluar(List<String> comando){ //la creacion de funciones es un caso aparte, no es una operacion almenos para este interprete
++        // los enteros iLi usado para determinal el largo de las listas
++        int iLi = 0;
+         if (comando.get(1).equals("defun")){
+             return Defun.DefFun(comando);
+         }
+@@ -42,12 +44,16 @@
+                     parentesis.add("-");
+                     break;
+                 case ")":
+-
+                     parentesis.pop();
+                     if (!operaciones.isEmpty()) {
+                         String op0 = operaciones.pop();
+-                        Operador op = (Operador) vocabulario.interpretar(op0);
+-                        op.operar(valores);
++                        if (op0.equals("list")){
++                            Lista.operar(valores,(i-iLi-1));
++                        }
++                        else {
++                            Operador op = (Operador) vocabulario.interpretar(op0);
++                            op.operar(valores);
++                        }
+                     }
+                     break;
+                 case "quote":
+@@ -57,6 +63,10 @@
+                 case "cond":
+                     Cond.mod(comando,i);
+                     i--;
++                    break;
++                case "list":
++                    operaciones.add(v);
++                    iLi = i;
+                     break;
+                 default:
+                     //algo
+Index: src/main/java/uvg/edu/gt/operadores/listOp.java
+===================================================================
+diff --git a/src/main/java/uvg/edu/gt/operadores/listOp.java b/src/main/java/uvg/edu/gt/operadores/listOp.java
+deleted file mode 100644
+--- a/src/main/java/uvg/edu/gt/operadores/listOp.java	(revision 76a685de67d08c4d876e96875621a59e11891ced)
++++ /dev/null	(revision 76a685de67d08c4d876e96875621a59e11891ced)
+@@ -1,19 +0,0 @@
+-package uvg.edu.gt.operadores;
+-
+-import uvg.edu.gt.operadores.Operador;
+-
+-import java.util.*;
+-
+-public class listOp implements Operador {
+-    @Override
+-    public void operar(Stack<String> valores) {
+-        int iterador = valores.size();
+-        ArrayList<String> lista = new ArrayList<>();
+-        for (int i = 0; i < iterador; i++) {
+-            lista.add(valores.pop());
+-        }
+-        Collections.reverse(lista);
+-        valores.add(lista.toString());
+-    }
+-
+-}
+Index: src/main/java/uvg/edu/gt/otros/Lista.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/uvg/edu/gt/otros/Lista.java b/src/main/java/uvg/edu/gt/otros/Lista.java
+new file mode 100644
+--- /dev/null	(date 1711030725016)
++++ b/src/main/java/uvg/edu/gt/otros/Lista.java	(date 1711030725016)
+@@ -0,0 +1,24 @@
++package uvg.edu.gt.otros;
++
++import java.util.*;
++
++/**
++ * Esto es casi un operador, por lo mismo se trata casi como a un operdaor
++ */
++public class Lista {
++    /**
++     *
++     * @param valores la pila que contine los valores de la lista
++     * @param iterador el tamaño de la lista
++     */
++    public static void operar(Stack<String> valores, int iterador) {
++
++        ArrayList<String> lista = new ArrayList<>();
++        for (int i = 0; i < iterador; i++) {
++            lista.add(valores.pop());
++        }
++        Collections.reverse(lista);
++        valores.add(lista.toString());
++    }
++
++}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"02d303f8-d38e-4147-bb89-5020d833e94b\" name=\"Changes\" comment=\"Se modifico snipet para que reconozca Strings, ya vamos a poder programar al infame (print &quot;Hello word!&quot;)\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/Atom.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Atom.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/Codigo.txt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/Codigo.txt\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/Cond.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/otros/Cond.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/Croissant.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Croissant.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/Decroissant.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Decroissant.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/Defun.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/otros/Defun.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/Div.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Div.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/Equal.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Equal.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/Evaluador.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/Evaluador.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/Funcion.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Funcion.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/Menu.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/Menu.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/Operador.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Operador.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/Print.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Print.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/Prod.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Prod.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/Quote.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Quote.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/Resta.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Resta.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/Setq.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Setq.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/Suma.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Suma.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/Vocabulario.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/Vocabulario.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/listOp.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/listOp.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 6\n}</component>\n  <component name=\"ProjectId\" id=\"2dgVExtAz8ntlzVrVKFXEMCx8K3\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;Application.Menu.executor&quot;: &quot;Run&quot;,\n    &quot;JUnit.EvaluadorTest.evaluarFact.executor&quot;: &quot;Run&quot;,\n    &quot;Maven.Interprete_LISP [compile].executor&quot;: &quot;Run&quot;,\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;master&quot;,\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"MoveClassesOrPackagesDialog.RECENTS_KEY\">\n      <recent name=\"uvg.edu.gt\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"Application.Menu\">\n    <configuration name=\"Menu\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"uvg.edu.gt.Menu\" />\n      <module name=\"Interprete_LISP\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"uvg.edu.gt.operadores.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"EvaluadorTest.evaluarFact\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"Interprete_LISP\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"uvg.edu.gt.operadores.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"uvg.edu.gt\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"uvg.edu.gt.EvaluadorTest\" />\n      <option name=\"METHOD_NAME\" value=\"evaluarFact\" />\n      <option name=\"TEST_OBJECT\" value=\"method\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration default=\"true\" type=\"JetRunConfigurationType\">\n      <module name=\"Interprete_LISP0\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration default=\"true\" type=\"KotlinStandaloneScriptRunConfigurationType\">\n      <module name=\"Interprete_LISP0\" />\n      <option name=\"filePath\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.Menu\" />\n        <item itemvalue=\"JUnit.EvaluadorTest.evaluarFact\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"jdk-21.0.2-openjdk-21.0.2-f644763e9732-c0c073db\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"02d303f8-d38e-4147-bb89-5020d833e94b\" name=\"Changes\" comment=\"\" />\n      <created>1710429600962</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1710429600962</updated>\n      <workItem from=\"1710429602316\" duration=\"2077000\" />\n      <workItem from=\"1710891466100\" duration=\"4234000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Se modifico snipet para que reconozca Strings, ya vamos a poder programar al infame (print &quot;Hello word!&quot;)\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Se modifico snipet para que reconozca Strings, ya vamos a poder programar al infame (print &quot;Hello word!&quot;)\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 76a685de67d08c4d876e96875621a59e11891ced)
++++ b/.idea/workspace.xml	(date 1711120256387)
+@@ -4,28 +4,16 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="02d303f8-d38e-4147-bb89-5020d833e94b" name="Changes" comment="Se modifico snipet para que reconozca Strings, ya vamos a poder programar al infame (print &quot;Hello word!&quot;)">
++    <list default="true" id="02d303f8-d38e-4147-bb89-5020d833e94b" name="Changes" comment="Se Restructuro el proyecto en paquetes&#10;- En el Paquete operadores estan todos los operadores&#10;- En el paquete otros esta Defun y Cond que no son operadores propiamente dicho, almenos como se implementaron en este liso&#10;En la carpeta principal quedaron las partes principales del código">
++      <change afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/otros/Lista.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Atom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Atom.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Codigo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Codigo.txt" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Cond.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/otros/Cond.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Croissant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Croissant.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Decroissant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Decroissant.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Defun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/otros/Defun.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Div.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Div.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Equal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Equal.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Evaluador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Evaluador.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Funcion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Funcion.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Menu.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Operador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Operador.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Print.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Print.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Prod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Prod.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Quote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Quote.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Resta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Resta.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Setq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Setq.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Suma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Suma.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Snippets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Snippets.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Vocabulario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/Vocabulario.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/listOp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/listOp.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Funcion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Funcion.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Print.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Print.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/listOp.java" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -59,23 +47,23 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;Application.Menu.executor&quot;: &quot;Run&quot;,
+-    &quot;JUnit.EvaluadorTest.evaluarFact.executor&quot;: &quot;Run&quot;,
+-    &quot;Maven.Interprete_LISP [compile].executor&quot;: &quot;Run&quot;,
+-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "Application.Menu.executor": "Run",
++    "JUnit.EvaluadorTest.evaluarFact.executor": "Run",
++    "Maven.Interprete_LISP [compile].executor": "Run",
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "git-widget-placeholder": "master",
++    "kotlin-language-version-configured": "true",
++    "node.js.detected.package.eslint": "true",
++    "node.js.detected.package.tslint": "true",
++    "node.js.selected.package.eslint": "(autodetect)",
++    "node.js.selected.package.tslint": "(autodetect)",
++    "nodejs_package_manager_path": "npm",
++    "vue.rearranger.settings.migration": "true"
+   }
+-}</component>
++}]]></component>
+   <component name="RecentsManager">
+     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+       <recent name="uvg.edu.gt" />
+@@ -87,7 +75,7 @@
+       <module name="Interprete_LISP" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="uvg.edu.gt.operadores.*" />
++          <option name="PATTERN" value="uvg.edu.gt.otros.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+@@ -99,7 +87,7 @@
+       <module name="Interprete_LISP" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="uvg.edu.gt.operadores.*" />
++          <option name="PATTERN" value="uvg.edu.gt.otros.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+@@ -149,13 +137,45 @@
+       <workItem from="1710429602316" duration="2077000" />
+       <workItem from="1710891466100" duration="4234000" />
+     </task>
++    <task id="LOCAL-00001" summary="Se Restructuro el proyecto en paquetes&#10;- En el Paquete operadores estan todos los operadores&#10;- En el paquete otros esta Defun y Cond que no son operadores propiamente dicho, almenos como se implementaron en este liso&#10;En la carpeta principal quedaron las partes principales del código">
++      <option name="closed" value="true" />
++      <created>1711027594382</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1711027594382</updated>
++    </task>
++    <option name="localTasksCounter" value="2" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
+   </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Se modifico snipet para que reconozca Strings, ya vamos a poder programar al infame (print &quot;Hello word!&quot;)" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Se modifico snipet para que reconozca Strings, ya vamos a poder programar al infame (print &quot;Hello word!&quot;)" />
++    <MESSAGE value="Se Restructuro el proyecto en paquetes&#10;- En el Paquete operadores estan todos los operadores&#10;- En el paquete otros esta Defun y Cond que no son operadores propiamente dicho, almenos como se implementaron en este liso&#10;En la carpeta principal quedaron las partes principales del código" />
++    <option name="LAST_COMMIT_MESSAGE" value="Se Restructuro el proyecto en paquetes&#10;- En el Paquete operadores estan todos los operadores&#10;- En el paquete otros esta Defun y Cond que no son operadores propiamente dicho, almenos como se implementaron en este liso&#10;En la carpeta principal quedaron las partes principales del código" />
++  </component>
++  <component name="XDebuggerManager">
++    <breakpoint-manager>
++      <breakpoints>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/main/java/uvg/edu/gt/operadores/Setq.java</url>
++          <line>16</line>
++          <option name="timeStamp" value="5" />
++        </line-breakpoint>
++      </breakpoints>
++    </breakpoint-manager>
+   </component>
+ </project>
+\ No newline at end of file

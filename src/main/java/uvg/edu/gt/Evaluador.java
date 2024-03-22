@@ -3,7 +3,7 @@ package uvg.edu.gt;
 import uvg.edu.gt.operadores.Operador;
 import uvg.edu.gt.otros.Cond;
 import uvg.edu.gt.otros.Defun;
-
+import uvg.edu.gt.otros.Lista;
 import java.util.List;
 import java.util.Stack;
 
@@ -30,6 +30,8 @@ public class Evaluador {
      * @return devuelve la salida del comando como string
      */
     public  String  evaluar(List<String> comando){ //la creacion de funciones es un caso aparte, no es una operacion almenos para este interprete
+        // los enteros iLi usado para determinal el largo de las listas
+        int iLi = 0;
         if (comando.get(1).equals("defun")){
             return Defun.DefFun(comando);
         }
@@ -42,12 +44,16 @@ public class Evaluador {
                     parentesis.add("-");
                     break;
                 case ")":
-
                     parentesis.pop();
                     if (!operaciones.isEmpty()) {
                         String op0 = operaciones.pop();
-                        Operador op = (Operador) vocabulario.interpretar(op0);
-                        op.operar(valores);
+                        if (op0.equals("list")){
+                            Lista.operar(valores,(i-iLi-1));
+                        }
+                        else {
+                            Operador op = (Operador) vocabulario.interpretar(op0);
+                            op.operar(valores);
+                        }
                     }
                     break;
                 case "quote":
@@ -57,6 +63,10 @@ public class Evaluador {
                 case "cond":
                     Cond.mod(comando,i);
                     i--;
+                    break;
+                case "list":
+                    operaciones.add(v);
+                    iLi = i;
                     break;
                 default:
                     //algo

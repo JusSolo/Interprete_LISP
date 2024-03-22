@@ -2,6 +2,7 @@ package uvg.edu.gt;
 
 import uvg.edu.gt.operadores.*;
 
+
 import java.util.HashMap;
 
 /**
@@ -41,8 +42,6 @@ public class Vocabulario {
         Operador o9 = new Print();
         memoria.put("print", o9);
 
-        Operador o10 = new listOp();
-        memoria.put("list", o10);
 
         Operador o11 = new Atom();
         memoria.put("atom", o11);
