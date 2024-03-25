@@ -24,6 +24,13 @@ Para que el interprete endienda la cadena es indispensable que las comillas (") 
 ## Comando Cond
 En Lisp es monado cond es una lista de condiciones. Sin embargo para nuestro Código es un if{} else{} combinado. Esto se debe a una mala interpretacion de el comando cond de nuestra parte. Sin embargo para nuestros fines de correr fibonacci y factorial como funciones recursivas esta diferencia no establece un problema. 
 ### Ejemplo:
+En java:
+if (x <1)
+  x++;
+else:
+  x *= 2;
 
+El nuestro Lisp:
+(cond ((< x 1) (setq x (+ x 1)) ) ( setq x (+ x 2)))
 
 
