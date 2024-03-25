@@ -5,8 +5,11 @@
 - Carlos Villagrán,    carnet: 22264
 - Jorge Palacios,      carnet: 231385
 
-## Primera face:
+## Primera fase:
 [Ver doc con la investicgación](https://docs.google.com/document/d/1gnTj-BvUHW2ATFoACNjD3tx1tIwkDdJFa-MMkx-zV0s/edit?usp=sharing)
+
+##Segunda Fase 
+Link al Google Drive donde se encuentra el video y diagramas UML : https://drive.google.com/drive/folders/1VIeGVN8Ice7zjbezOSbBuyUWPQkLiMha?usp=sharing 
 
 ## Nota importante:
 En la rama master esta todo el código
