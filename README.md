@@ -33,6 +33,6 @@ else{
   }
 
 El nuestro Lisp:
-(cond ((< x 1) (setq x (+ x 1)) ) ( setq x (+ x 2)))
+(cond ((< x 1) (setq x (+ x 1)) ) ( setq x (* x 2)))
 
 
